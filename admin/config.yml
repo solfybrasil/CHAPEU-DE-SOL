@@ -3,7 +3,7 @@
 # 2. Em um terminal, rode: npx decap-server
 # 3. Em outro terminal, rode: python -m http.server 8080 (ou npx serve .)
 # 4. Acesse: http://localhost:8080/admin/
-# Quando for publicar no Netlify, comente a linha local_backend novamente.
+# Quando for publicar no Netlify, comente a linha local_backend novamente (ou deixe como está abaixo).
 # local_backend: true
 
 backend:
@@ -40,7 +40,7 @@ collections:
           - label: "Contato"
             name: "contato"
             widget: "object"
-            collapsed: true
+            collapsed: false
             fields:
               - { label: "WhatsApp (apenas números, com DDI)", name: "whatsapp", widget: "string" }
               - { label: "WhatsApp (texto visível)", name: "whatsappTexto", widget: "string" }
@@ -52,7 +52,7 @@ collections:
           - label: "Fotos do topo"
             name: "heroFotos"
             widget: "list"
-            collapsed: true
+            collapsed: false
             min: 1
             max: 6
             summary: "{{fields.legenda}}"
@@ -64,7 +64,7 @@ collections:
           - label: "Lazer"
             name: "lazer"
             widget: "list"
-            collapsed: true
+            collapsed: false
             summary: "{{fields.texto}}"
             fields:
               - { label: "Foto", name: "foto", widget: "image" }
@@ -80,7 +80,7 @@ collections:
           - label: "Hospedagens"
             name: "hospedagens"
             widget: "list"
-            collapsed: true
+            collapsed: false
             summary: "{{fields.nome}} — R$ {{fields.preco}}"
             fields:
               - { label: "ID interno (ex: chale-vip)", name: "id", widget: "string" }
@@ -125,7 +125,7 @@ collections:
           - label: "Perguntas frequentes"
             name: "faq"
             widget: "list"
-            collapsed: true
+            collapsed: false
             summary: "{{fields.pergunta}}"
             fields:
               - { label: "Pergunta", name: "pergunta", widget: "string" }

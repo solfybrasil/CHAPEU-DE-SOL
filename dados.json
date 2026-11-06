@@ -57,19 +57,6 @@
   ],
   "hospedagens": [
     {
-      "id": "chale-madeira",
-      "nome": "Chalé Madeira",
-      "grupo": "hospedagem",
-      "etiqueta": "O clássico",
-      "descricaoCurta": "Cama de casal, mezanino e cozinha integrada · café + almoço",
-      "preco": 312,
-      "rotuloPreco": "a partir de",
-      "status": "disponivel",
-      "fotos": [
-        "/fotos/chale-madeira.jpg",
-        "/fotos/pesqueiro.jpg",
-        "/fotos/tirolesa.jpg"
-      ],
       "destaque": {
         "intro": "O clássico que todo mundo ama: simples, aconchegante, com sala e cozinha integradas, mezanino e varanda virada pro verde.",
         "itens": [
@@ -106,22 +93,22 @@
             "texto": "Na coleira, com taxa de R$ 50 por noite."
           }
         ]
-      }
+      },
+      "descricaoCurta": "Cama de casal, mezanino e cozinha integrada · café + almoço",
+      "grupo": "hospedagem",
+      "rotuloPreco": "a partir de",
+      "preco": 312,
+      "fotos": [
+        "/fotos/chale-madeira.jpg",
+        "/fotos/pesqueiro.jpg",
+        "/fotos/tirolesa.jpg"
+      ],
+      "status": "disponivel",
+      "etiqueta": "O clássico",
+      "nome": "Chalé Madeira",
+      "id": "chale-madeira"
     },
     {
-      "id": "chale-vip",
-      "nome": "Chalé VIP",
-      "grupo": "hospedagem",
-      "etiqueta": "Mais espaço",
-      "descricaoCurta": "Pra família inteira · ar-condicionado e sala com TV",
-      "preco": 390,
-      "rotuloPreco": "a partir de",
-      "status": "disponivel",
-      "fotos": [
-        "/fotos/chale-vip.jpg",
-        "/fotos/piscina-central.jpg",
-        "/fotos/piscina-feijao.jpg"
-      ],
       "destaque": {
         "intro": "O Chalé VIP foi pensado pra família inteira: quarto com cama de casal, mezanino com três colchões de solteiro e cozinha equipada para até seis pessoas.",
         "itens": [
@@ -158,98 +145,111 @@
             "texto": "Chuveiro elétrico. Toda a tomada é 220V."
           }
         ]
-      }
+      },
+      "descricaoCurta": "Pra família inteira · ar-condicionado e sala com TV",
+      "grupo": "hospedagem",
+      "rotuloPreco": "a partir de",
+      "preco": 390,
+      "fotos": [
+        "/fotos/chale-vip.jpg",
+        "/fotos/piscina-central.jpg",
+        "/fotos/piscina-feijao.jpg"
+      ],
+      "status": "disponivel",
+      "etiqueta": "Mais espaço",
+      "nome": "Chalé VIP",
+      "id": "chale-vip"
     },
     {
-      "id": "pousada",
-      "nome": "Pousada",
-      "grupo": "hospedagem",
-      "etiqueta": "Conforto",
       "descricaoCurta": "Conforto de quarto, cercado de natureza",
-      "preco": 343.2,
+      "grupo": "hospedagem",
       "rotuloPreco": "a partir de",
-      "status": "disponivel",
+      "preco": 343.2,
       "fotos": [
         "/fotos/pousada.jpg"
-      ]
+      ],
+      "status": "disponivel",
+      "etiqueta": "Conforto",
+      "nome": "Pousada",
+      "id": "pousada"
     },
     {
-      "id": "suite-container",
-      "nome": "Suíte Container",
-      "grupo": "hospedagem",
-      "etiqueta": "Diferente",
       "descricaoCurta": "Casal + solteiro, frigobar e churrasqueira externa",
-      "preco": 343.2,
+      "grupo": "hospedagem",
       "rotuloPreco": "a partir de",
-      "status": "disponivel",
+      "preco": 343.2,
       "fotos": [
         "/fotos/suite-container.jpg"
-      ]
+      ],
+      "status": "disponivel",
+      "etiqueta": "Diferente",
+      "nome": "Suíte Container",
+      "id": "suite-container"
     },
     {
-      "id": "trailer",
-      "nome": "Trailer",
-      "grupo": "hospedagem",
-      "etiqueta": "Sobre rodas",
       "descricaoCurta": "Casal + beliche infantil, banheiro e ar-condicionado",
-      "preco": 700,
+      "grupo": "hospedagem",
       "rotuloPreco": "a partir de",
-      "status": "disponivel",
+      "preco": 700,
       "fotos": [
         "/fotos/trailer.jpg"
-      ]
+      ],
+      "status": "disponivel",
+      "etiqueta": "Sobre rodas",
+      "nome": "Trailer",
+      "id": "trailer"
     },
     {
-      "id": "area-barracas",
-      "nome": "Área de Barracas",
-      "grupo": "acampamento",
-      "etiqueta": "Raiz",
       "descricaoCurta": "Sombra de eucalipto, banheiros e cozinha coletiva",
-      "preco": 70,
+      "grupo": "acampamento",
       "rotuloPreco": "a partir de",
-      "status": "disponivel",
+      "preco": 70,
       "fotos": [
         "/fotos/area-barracas.jpg"
-      ]
+      ],
+      "status": "disponivel",
+      "etiqueta": "Raiz",
+      "nome": "Área de Barracas",
+      "id": "area-barracas"
     },
     {
-      "id": "ready-camp",
-      "nome": "Ready Camp",
-      "grupo": "acampamento",
-      "etiqueta": "Já montado",
       "descricaoCurta": "Barraca montada e colchonete — é só chegar",
-      "preco": 150,
+      "grupo": "acampamento",
       "rotuloPreco": "a partir de",
-      "status": "disponivel",
+      "preco": 150,
       "fotos": [
         "/fotos/foto-capa.jpg"
-      ]
+      ],
+      "status": "disponivel",
+      "etiqueta": "Já montado",
+      "nome": "Ready Camp",
+      "id": "ready-camp"
     },
     {
-      "id": "day-use",
-      "nome": "Day Use",
-      "grupo": "acampamento",
-      "etiqueta": "Sem pernoite",
       "descricaoCurta": "Piscinas, quadras e lazer o dia inteiro",
-      "preco": 70,
+      "grupo": "acampamento",
       "rotuloPreco": "a partir de",
-      "status": "disponivel",
+      "preco": 70,
       "fotos": [
         "/fotos/piscina.jpg"
-      ]
+      ],
+      "status": "disponivel",
+      "etiqueta": "Sem pernoite",
+      "nome": "Day Use",
+      "id": "day-use"
     },
     {
-      "id": "glamping",
-      "nome": "Glamping",
-      "grupo": "acampamento",
-      "etiqueta": "Em breve",
       "descricaoCurta": "Conforto, exclusividade e natureza",
-      "preco": null,
+      "grupo": "acampamento",
       "rotuloPreco": "a partir de",
-      "status": "em-breve",
+      "preco": null,
       "fotos": [
         "/fotos/piscina-central.jpg"
-      ]
+      ],
+      "status": "em-breve",
+      "etiqueta": "Em breve",
+      "nome": "Glamping",
+      "id": "glamping"
     }
   ],
   "faq": [
