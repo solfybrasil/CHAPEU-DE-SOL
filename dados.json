@@ -42,7 +42,7 @@
     {
       "foto": "/fotos/pesqueiro.jpg",
       "texto": "Pesca esportiva com aluguel de equipamento",
-      "posicaoEtiqueta": "base"
+      "posicaoEtiqueta": "baixo"
     },
     {
       "foto": "/fotos/quadra-tenis.jpg",
@@ -52,7 +52,7 @@
     {
       "foto": "/fotos/piscina-infantil.jpg",
       "texto": "Piscina das crianças, toboágua e playground",
-      "posicaoEtiqueta": "base"
+      "posicaoEtiqueta": "baixo"
     }
   ],
   "hospedagens": [

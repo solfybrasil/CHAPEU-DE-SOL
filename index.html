@@ -6,6 +6,7 @@
 <title>Camping Chapéu de Sol · Itu, SP</title>
 <meta name="description" content="Chalés, pousada, suíte container, trailer e barracas em Itu-SP. Cinco piscinas, tirolesa, pesqueiro, quadras e café + almoço inclusos nos chalés.">
 <link rel="icon" type="image/png" href="/img/logo/favicon.png">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -803,6 +804,17 @@ fetch("/dados.json")
   .catch(err => {
     console.warn("Não foi possível carregar dados.json:", err.message);
   });
+
+/* REDIRECIONAMENTO DE LOGIN DO NETLIFY IDENTITY */
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
+}
 </script>
 </body>
 </html>
