@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Camping Chapéu de Sol · Itu, SP</title>
+<meta name="description" content="Chalés, pousada, suíte container, trailer e barracas em Itu-SP. Cinco piscinas, tirolesa, pesqueiro, quadras e café + almoço inclusos nos chalés.">
+<link rel="icon" type="image/png" href="/img/logo/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0F3D2A; --panel:#164A33; --panel-2:#1B5539; --deep:#0B2F20;
+    --cream:#EFE8D0; --cream-2:#F6F1E1; --ink:#10281C;
+    --mint:#5FAE58; --sun:#F2B630;
+    --r:16px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Manrope",system-ui,sans-serif;background:var(--bg);color:var(--cream);-webkit-font-smoothing:antialiased;overflow-x:hidden;
+    background-image:radial-gradient(1200px 600px at 80% -10%,rgba(78,154,104,.18),transparent 60%),radial-gradient(900px 500px at -10% 40%,rgba(0,0,0,.18),transparent 60%)}
+  a{color:inherit;text-decoration:none}
+  img{display:block}
+  .page{width:min(1240px,94vw);margin:0 auto;padding:18px 0 40px;position:relative}
+  .display{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;letter-spacing:.01em;line-height:.88;text-transform:uppercase}
+  .script{font-family:"Caveat",cursive;font-weight:500;color:rgba(239,232,208,.7)}
+  .mint{color:var(--mint)}
+
+
+  /* ============ TOP BANNER ============ */
+  .top-banner{background:var(--panel);color:var(--cream);font-size:.78rem;font-weight:600;text-align:center;padding:.55rem 1.2rem;border-radius:var(--r);margin-bottom:12px;display:flex;align-items:center;justify-content:center;gap:.6rem;box-shadow:0 2px 10px rgba(0,0,0,.15);border:1px solid rgba(239,232,208,.1)}
+  .top-banner-icon{color:var(--sun);font-size:1rem;line-height:1}
+  /* image frame with fallback */
+  .ph{position:relative;overflow:hidden;background:linear-gradient(140deg,#2A6A47,#123B28);}
+  .ph::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.04) 0 2px,transparent 2px 14px)}
+  .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+  .ph:hover img{transform:scale(1.05)}
+
+  .btn{display:inline-flex;align-items:center;gap:.7rem;border:0;border-radius:999px;cursor:pointer;font:inherit;font-weight:700;font-size:.82rem;padding:.55rem .6rem .55rem 1.1rem;transition:transform .2s, filter .2s;white-space:nowrap}
+  .btn:hover{transform:translateY(-2px)}
+  .btn .ar{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:.9rem}
+  .btn-dark{background:var(--deep);color:var(--cream)}
+  .btn-dark .ar{background:var(--cream);color:var(--deep)}
+  .btn-cream{background:var(--cream);color:var(--ink)}
+  .btn-cream .ar{background:var(--deep);color:var(--cream)}
+  .btn-sm{padding:.45rem 1rem;font-size:.74rem}
+
+  .sparkle{position:absolute;width:16px;height:16px;color:var(--cream);pointer-events:none}
+  .dash{position:absolute;pointer-events:none;opacity:.35}
+
+  /* ============ HERO ============ */
+  .hero{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .hero-left{background:var(--panel);border-radius:var(--r);padding:18px 26px 26px;position:relative;overflow:hidden;display:flex;flex-direction:column}
+  .topnav{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+  .logo{width:34px;height:34px;border-radius:50%;background:var(--cream);display:grid;place-items:center}
+  .logo svg{width:22px;height:22px}
+  .links{display:flex;gap:1.8rem;font-size:.78rem;font-weight:600;opacity:.85}
+  .links a:hover{opacity:1;color:#fff}
+  .pill{display:inline-flex;align-items:center;gap:.4rem;background:var(--cream);color:var(--ink);border-radius:999px;padding:.4rem .85rem;font-size:.72rem;font-weight:700}
+  .pill svg{width:13px;height:13px}
+  .hero-title{position:relative;margin-top:clamp(2rem,5vw,3.4rem);font-size:clamp(3.6rem,7.4vw,6.4rem)}
+  .tag-sticker{position:absolute;right:0;top:-6px;display:flex;align-items:center;gap:.5rem;transform:rotate(-2deg)}
+  .tag-sticker .tri{width:62px;height:46px}
+  .tag-sticker .note{background:var(--cream);color:var(--ink);font-family:"Manrope";font-size:.62rem;font-weight:600;line-height:1.3;padding:.45rem .6rem;border-radius:4px;max-width:140px;text-transform:none;letter-spacing:0}
+  .hero-sub{display:flex;align-items:center;gap:1.4rem;margin-top:1.6rem;flex-wrap:wrap}
+  .hero-sub p{font-size:.78rem;line-height:1.5;opacity:.82;max-width:30ch}
+  .hero-sub p b{color:#fff}
+  .thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:auto;padding-top:2rem;position:relative}
+  .thumbs .ph{aspect-ratio:1/1.05;border-radius:10px;cursor:pointer;outline:2px solid transparent;outline-offset:2px;transition:outline-color .2s}
+  .thumbs .ph.on{outline-color:var(--cream)}
+  .hero-right{border-radius:var(--r);min-height:560px;position:relative}
+  .hero-right .ph{position:absolute;inset:0;border-radius:var(--r)}
+  .hero-right .ph img{transition:opacity .5s, transform .8s}
+  .hr-top{position:absolute;top:16px;right:16px;display:flex;gap:8px;z-index:2}
+  .hr-top .pill{background:var(--deep);color:var(--cream)}
+  .menu-btn{width:44px;height:30px;border-radius:999px;background:var(--deep);display:grid;place-items:center}
+  .menu-btn i{display:block;width:16px;height:2px;background:var(--cream);box-shadow:0 -5px var(--cream),0 5px var(--cream)}
+  .hr-cap{position:absolute;left:16px;bottom:16px;z-index:2;background:rgba(11,47,32,.82);backdrop-filter:blur(6px);padding:.5rem .9rem;border-radius:999px;font-size:.72rem;font-weight:600}
+
+  /* ============ BOOKING BAR ============ */
+  .book{margin-top:10px;background:var(--cream);color:var(--ink);border-radius:var(--r);padding:14px 14px 14px 26px;display:grid;grid-template-columns:auto 1fr 1fr 1fr 1fr auto;gap:12px;align-items:center}
+  .book h4{font-family:"Bebas Neue";font-size:1.35rem;line-height:.9;font-weight:400;letter-spacing:.02em;margin-right:1rem}
+  .bf{background:var(--cream-2);border:1px solid rgba(16,40,28,.12);border-radius:10px;padding:.45rem .75rem;display:flex;align-items:center;justify-content:space-between;gap:.5rem;position:relative}
+  .bf small{display:block;font-size:.6rem;opacity:.55;font-weight:600}
+  .bf input,.bf select{border:0;background:transparent;font:inherit;font-size:.78rem;font-weight:700;color:var(--ink);outline:none;width:100%;appearance:none;-webkit-appearance:none;cursor:pointer}
+  .bf svg{width:16px;height:16px;opacity:.6;flex-shrink:0}
+  .book .btn{padding:.85rem 1.4rem;font-size:.78rem}
+
+  /* ============ SECTION HEADS ============ */
+  section{position:relative;margin-top:clamp(4rem,9vw,6.5rem)}
+  .sh{display:grid;grid-template-columns:150px 1fr auto;gap:1.5rem;align-items:end;margin-bottom:1.6rem;position:relative}
+  .sh .script{font-size:1.05rem;line-height:1.05;padding-bottom:.4rem}
+  .sh h2{font-size:clamp(2.6rem,5.4vw,4.4rem)}
+  .sh .side{display:flex;align-items:end;gap:1.4rem}
+  .sh .side p{font-size:.72rem;opacity:.75;max-width:28ch;line-height:1.5}
+  .arrows{display:flex;gap:8px}
+  .arrows button{width:42px;height:42px;border-radius:8px;border:0;background:var(--cream);color:var(--ink);font-size:1.1rem;cursor:pointer;transition:transform .2s, background .2s}
+  .arrows button:hover{transform:translateY(-2px);background:#fff}
+  .inline-title{display:flex;align-items:end;gap:1.2rem;flex-wrap:wrap}
+
+  /* ============ LAZER (5 tall cards) ============ */
+  .tall{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+  .tall .ph{aspect-ratio:3/4.3;border-radius:12px}
+  .chip{position:absolute;z-index:2;background:var(--cream);color:var(--ink);font-size:.62rem;font-weight:700;line-height:1.3;padding:.38rem .6rem;border-radius:6px;max-width:80%}
+  .chip.t{top:10px;left:10px}
+  .chip.b{bottom:10px;left:10px}
+  .chip.dark{background:var(--deep);color:var(--cream)}
+
+  /* ============ CAROUSEL CARDS ============ */
+  .track{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 30px)/4);gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+  .track::-webkit-scrollbar{display:none}
+  .card{scroll-snap-align:start;background:var(--cream);color:var(--ink);border-radius:12px;padding:8px 8px 12px;display:flex;flex-direction:column}
+  .card .ph{aspect-ratio:1/1.08;border-radius:8px}
+  .card h3{font-family:"Bebas Neue";font-weight:400;font-size:1.35rem;letter-spacing:.02em;margin:.75rem .35rem .1rem;line-height:1}
+  .card .meta{font-size:.7rem;opacity:.7;margin:0 .35rem .7rem;min-height:2.1em;line-height:1.5}
+  .card .row{display:flex;align-items:center;justify-content:space-between;margin:auto .35rem 0}
+  .card .price{font-family:"Bebas Neue";font-size:1.5rem;line-height:1}
+  .card .price small{font-family:"Manrope";font-size:.58rem;font-weight:700;opacity:.55;display:block;letter-spacing:.04em;text-transform:uppercase}
+
+  /* ============ FEATURE ============ */
+  .feature{background:var(--cream);color:var(--ink);border-radius:var(--r);padding:12px;display:grid;grid-template-columns:1.05fr 1fr;gap:26px}
+  .feature .gal{position:relative;border-radius:10px;min-height:440px}
+  .feature .gal .ph{position:absolute;inset:0;border-radius:10px}
+  .gal-nav{position:absolute;right:12px;bottom:12px;z-index:2;display:flex;gap:6px}
+  .gal-nav button{width:30px;height:30px;border-radius:50%;border:0;background:var(--cream);color:var(--ink);cursor:pointer;font-weight:700}
+  .feat-body{padding:18px 14px 14px 0;display:flex;flex-direction:column}
+  .feat-top{display:flex;justify-content:space-between;gap:1rem;align-items:start}
+  .feat-top p{font-size:.82rem;font-weight:600;line-height:1.5;max-width:40ch}
+  .flist{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem 1.6rem;margin-top:1.6rem}
+  .fi h5{font-size:.74rem;font-weight:800;display:flex;gap:.45rem;align-items:center}
+  .fi h5 svg{width:11px;height:11px;color:var(--mint);flex-shrink:0}
+  .fi p{font-size:.68rem;line-height:1.5;opacity:.72;margin-top:.3rem;padding-left:1.05rem}
+  .tabs{display:flex;gap:6px;margin-top:auto;padding-top:1.4rem;flex-wrap:wrap}
+  .tabs button{border:1px solid rgba(16,40,28,.2);background:transparent;border-radius:999px;padding:.4rem .9rem;font:inherit;font-size:.72rem;font-weight:700;cursor:pointer;color:var(--ink)}
+  .tabs button.on{background:var(--deep);color:var(--cream);border-color:var(--deep)}
+
+  /* ============ FAQ / INFO ============ */
+  .info{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .faq{background:var(--panel);border-radius:var(--r);padding:8px}
+  .q{border-bottom:1px solid rgba(239,232,208,.1)}
+  .q:last-child{border:0}
+  .q button{width:100%;text-align:left;background:none;border:0;color:var(--cream);font:inherit;font-weight:700;font-size:.86rem;padding:1.05rem 1rem;display:flex;justify-content:space-between;gap:1rem;cursor:pointer}
+  .q button span{transition:transform .3s;font-size:1.1rem;line-height:1}
+  .q.open button span{transform:rotate(45deg)}
+  .q .a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+  .q .a p{font-size:.78rem;line-height:1.6;opacity:.78;padding:0 1rem 1.1rem}
+  .visit{background:var(--cream);color:var(--ink);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+  .visit iframe{width:100%;flex:1;min-height:260px;border:0;filter:saturate(.75) hue-rotate(-8deg)}
+  .vrow{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(16,40,28,.12)}
+  .vrow a{padding:1rem 1.1rem;border-right:1px solid rgba(16,40,28,.12);transition:background .2s}
+  .vrow a:last-child{border:0}
+  .vrow a:hover{background:var(--cream-2)}
+  .vrow small{font-size:.62rem;opacity:.6;font-weight:700;display:block;text-transform:uppercase;letter-spacing:.06em}
+  .vrow b{font-size:.82rem}
+  .addr{padding:1.1rem 1.2rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+  .addr b{font-family:"Bebas Neue";font-weight:400;font-size:1.5rem;letter-spacing:.02em;line-height:1}
+  .addr span{font-size:.75rem;opacity:.7;display:block;margin-top:.2rem}
+
+  footer{margin-top:clamp(4rem,9vw,6rem);background:var(--panel);border-radius:var(--r);padding:clamp(1.8rem,4vw,3rem);display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;position:relative;overflow:hidden}
+  footer h2{font-size:clamp(3rem,7vw,6rem)}
+  .fbot{display:flex;justify-content:space-between;font-size:.72rem;opacity:.55;margin-top:1rem;padding:0 .4rem;flex-wrap:wrap;gap:.5rem}
+
+  .wa{position:fixed;right:18px;bottom:18px;z-index:40;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 30px -8px rgba(0,0,0,.5);transition:transform .2s}
+  .wa:hover{transform:scale(1.08)}
+  .wa svg{width:28px;height:28px;fill:#fff}
+
+  .rv{opacity:0;transform:translateY(24px);transition:opacity .8s, transform .8s}
+  .rv.in{opacity:1;transform:none}
+
+  /* ============ LOGO ============ */
+  .logo{width:46px;height:46px}
+  .logo img{width:34px;height:auto}
+  .hr-logo{position:absolute;right:18px;bottom:16px;z-index:2;width:clamp(96px,11vw,140px);filter:drop-shadow(0 4px 18px rgba(0,0,0,.55))}
+  .book h4{display:flex;align-items:center;gap:.7rem}
+  .book h4 img{width:44px}
+  .wm{position:absolute;pointer-events:none;opacity:.05;z-index:0}
+  section>*:not(.wm){position:relative;z-index:1}
+  footer{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:clamp(2rem,5vw,4rem)}
+  @media(max-width:760px){footer{grid-template-columns:1fr}}
+  .foot-l{display:flex;flex-direction:column;gap:1.4rem;position:relative;z-index:1}
+  .foot-r{display:flex;flex-direction:column;align-items:flex-start;gap:1.4rem;position:relative;z-index:1}
+  .foot-logo{width:clamp(170px,20vw,240px)}
+  .fbot img{height:22px;opacity:.9}
+  .fbot{align-items:center}
+  .addr .tr{width:46px;flex-shrink:0}
+  #splash{position:fixed;inset:0;z-index:100;background:var(--bg);display:grid;place-items:center;transition:opacity .7s ease, visibility .7s}
+  #splash img{width:min(240px,55vw);animation:pop 1.3s cubic-bezier(.2,.8,.2,1) both}
+  #splash.out{opacity:0;visibility:hidden}
+  @keyframes pop{0%{opacity:0;transform:scale(.86) translateY(10px)}60%{opacity:1}100%{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){#splash{display:none}}
+
+  /* ============ RESPONSIVE ============ */
+  @media(max-width:1000px){
+    .hero{grid-template-columns:1fr}
+    .hero-right{min-height:420px;order:-1}
+    .book{grid-template-columns:1fr 1fr;padding:16px}
+    .book h4{grid-column:1/-1}
+    .book .btn{grid-column:1/-1;justify-content:center}
+    .tall{grid-template-columns:repeat(5,72%);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+    .tall .ph{scroll-snap-align:start}
+    .track{grid-auto-columns:72%}
+    .sh{grid-template-columns:1fr}
+    .sh .script{display:none}
+    .feature{grid-template-columns:1fr}
+    .feature .gal{min-height:320px}
+    .feat-body{padding:6px 8px 10px}
+    .info{grid-template-columns:1fr}
+  }
+  @media(max-width:620px){
+    .links{display:none}
+    .tag-sticker{position:static;margin-top:1rem;transform:none}
+    .flist{grid-template-columns:1fr}
+    .vrow{grid-template-columns:1fr}
+    .vrow a{border-right:0;border-bottom:1px solid rgba(16,40,28,.12)}
+    .thumbs{gap:6px}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="splash" aria-hidden="true"><img src="/img/logo/logo-completo-creme.png" alt=""></div>
+<div class="page">
+
+  <!-- ============ FAIXA DE AVISO ============ -->
+  <aside class="top-banner" id="avisoBanner" style="display:none">
+    <span class="top-banner-icon">☀</span>
+    <span id="avisoTexto"></span>
+  </aside>
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-left">
+      <svg class="dash" style="right:-20px;bottom:110px;width:220px" viewBox="0 0 220 160" fill="none"><path d="M10 150C40 60 120 120 150 60S210 10 215 5" stroke="#EFE8D0" stroke-width="1.5" stroke-dasharray="4 7"/></svg>
+      <div class="topnav">
+        <a href="#" class="logo" aria-label="Camping Chapéu de Sol"><img src="/img/logo/simbolo-creme.png" alt="Chapéu de Sol"></a>
+        <nav class="links">
+          <a href="#hospedagens">Hospedagens</a>
+          <a href="#lazer">Lazer</a>
+          <a href="#valores">Valores</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <a class="pill" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Camping+Chap%C3%A9u+de+Sol+Itu+SP">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+          Como chegar
+        </a>
+      </div>
+
+      <h1 class="display hero-title">
+        Férias sob o<br>Chapéu de Sol
+        <span class="tag-sticker">
+          <img class="tri" src="/img/logo/simbolo-creme.png" alt="" style="width:64px;height:auto">
+          <span class="note">5 piscinas — uma delas aquecida ☀ em Itu, interior de SP</span>
+        </span>
+      </h1>
+      <svg class="sparkle" style="left:46%;top:118px" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0c.6 4.4 3.6 7.4 8 8-4.4.6-7.4 3.6-8 8-.6-4.4-3.6-7.4-8-8 4.4-.6 7.4-3.6 8-8z"/></svg>
+
+      <div class="hero-sub">
+        <p>Chalés com <b>café e almoço inclusos</b>, tirolesa, pesqueiro, quadras e toboágua — <b>uma semana inteira sem precisar sair do camping.</b></p>
+        <a href="#reservar" class="btn btn-dark">Reservar estadia <span class="ar">→</span></a>
+      </div>
+
+      <div class="thumbs" id="thumbs"></div>
+      <svg class="sparkle" style="left:16px;bottom:64px;width:12px" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0c.6 4.4 3.6 7.4 8 8-4.4.6-7.4 3.6-8 8-.6-4.4-3.6-7.4-8-8 4.4-.6 7.4-3.6 8-8z"/></svg>
+    </div>
+
+    <div class="hero-right">
+      <div class="ph" id="heroPh"><img id="heroImg" alt="Camping Chapéu de Sol" onerror="this.style.opacity=0"></div>
+      <div class="hr-top">
+        <a class="pill" href="https://wa.me/5511963984355" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+          (11) 96398-4355
+        </a>
+        <a class="menu-btn" href="#hospedagens" aria-label="Menu"><i></i></a>
+      </div>
+      <div class="hr-cap" id="heroCap">Piscina central</div>
+      <img class="hr-logo" src="/img/logo/logo-completo-creme.png" alt="Chapéu de Sol — Camping e Hospedagem">
+    </div>
+  </div>
+
+  <!-- ============ BOOKING ============ -->
+  <form class="book" id="reservar" onsubmit="return false">
+    <h4><img src="/img/logo/simbolo-creme.png" alt=""><span>Reserva de<br>hospedagem</span></h4>
+    <label class="bf"><div style="flex:1"><small>Entrada</small><input type="date" id="ci"></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></label>
+    <label class="bf"><div style="flex:1"><small>Saída</small><input type="date" id="co"></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></label>
+    <label class="bf"><div style="flex:1"><small>Hóspedes</small>
+      <select id="gu">
+        <option>1 adulto</option><option selected>2 adultos</option><option>2 adultos, 1 criança</option><option>2 adultos, 2 crianças</option><option>2 adultos, 3 crianças</option><option>3 adultos</option><option>4 adultos</option><option>5 ou mais pessoas</option>
+      </select></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5M17 6v6M14 9h6"/></svg></label>
+    <label class="bf"><div style="flex:1"><small>Hospedagem</small><select id="acc"></select></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11 12 4l9 7M5 10v10h14V10"/></svg></label>
+    <button class="btn btn-dark" id="send">Reservar pelo WhatsApp <span class="ar">→</span></button>
+  </form>
+
+  <!-- ============ LAZER ============ -->
+  <section id="lazer">
+    <img class="wm" src="/img/logo/arvore.png" alt="" style="right:-60px;top:-40px;width:460px">
+    <svg class="dash" style="right:0;top:-70px;width:120px" viewBox="0 0 120 60" fill="none"><path d="M2 40c30-30 60 20 116-35" stroke="#EFE8D0" stroke-width="1.5" stroke-dasharray="2 9" stroke-linecap="round"/></svg>
+    <div class="sh rv">
+      <span class="script">✦ o que te espera<br>por aqui</span>
+      <h2 class="display inline-title">Lazer completo <span class="mint">dentro do camping</span></h2>
+      <span></span>
+    </div>
+    <div class="tall rv" id="tall"></div>
+  </section>
+
+  <!-- ============ HOSPEDAGENS ============ -->
+  <section id="hospedagens">
+    <svg class="dash" style="left:-10px;top:-40px;width:150px" viewBox="0 0 150 90" fill="none"><path d="M5 85C10 30 70 60 90 30s50-20 55-25" stroke="#EFE8D0" stroke-width="1.5" stroke-dasharray="4 7"/></svg>
+    <div class="sh rv">
+      <span class="script">escolha seu<br>cantinho</span>
+      <h2 class="display">Hospedagens<br><span class="mint">com teto e conforto</span></h2>
+      <div class="side">
+        <p>Chalés, pousada, suíte container e trailer. Nos chalés, café da manhã e almoço no buffet já estão inclusos.</p>
+        <div class="arrows" data-for="trackA"><button aria-label="Anterior">←</button><button aria-label="Próximo">→</button></div>
+      </div>
+    </div>
+    <div class="track rv" id="trackA"></div>
+  </section>
+
+  <!-- ============ FEATURE ============ -->
+  <section id="chales">
+    <div class="sh rv">
+      <div class="ph" style="width:64px;height:64px;border-radius:8px;align-self:center"><img src="/fotos/chale-madeira.jpg" alt="" onerror="this.remove()"></div>
+      <h2 class="display">Cada chalé com café e almoço,<br><span class="mint">e o conforto de casa</span></h2>
+      <span></span>
+    </div>
+    <div class="feature rv">
+      <div class="gal">
+        <div class="ph"><img id="galImg" alt="Chalé" onerror="this.style.opacity=0"></div>
+        <span class="chip t" style="left:10px">Café da manhã incluso</span>
+        <span class="chip t" style="left:150px">Almoço incluso</span>
+        <span class="chip t dark" style="left:auto;right:10px" id="galCap">Chalé VIP</span>
+        <div class="gal-nav"><button id="gPrev" aria-label="Foto anterior">‹</button><button id="gNext" aria-label="Próxima foto">›</button></div>
+      </div>
+      <div class="feat-body">
+        <div class="feat-top">
+          <p id="featIntro">O Chalé VIP foi pensado pra família inteira: quarto com cama de casal, mezanino com três colchões de solteiro e cozinha equipada para até seis pessoas.</p>
+          <a href="#reservar" class="btn btn-dark btn-sm" id="featBtn" style="padding:.5rem .55rem .5rem 1rem">Escolher chalé <span class="ar" style="width:24px;height:24px">→</span></a>
+        </div>
+        <div class="flist" id="flist"></div>
+        <div class="tabs" id="tabs">
+          <button class="on" data-k="vip">Chalé VIP</button>
+          <button data-k="madeira">Chalé Madeira</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VALORES (acampar) ============ -->
+  <section id="valores">
+    <img class="wm" src="/img/logo/arvore.png" alt="" style="left:-80px;top:20px;width:420px">
+    <div class="sh rv">
+      <span class="script">pra quem ama<br>acampar ✦</span>
+      <h2 class="display">✦ Acampamento <span class="mint">e day use</span></h2>
+      <div class="side">
+        <p>Traga sua barraca, chegue com tudo montado ou venha só pra passar o dia.</p>
+        <div class="arrows" data-for="trackB"><button aria-label="Anterior">←</button><button aria-label="Próximo">→</button></div>
+      </div>
+    </div>
+    <div class="track rv" id="trackB"></div>
+  </section>
+
+  <!-- ============ INFO ============ -->
+  <section id="contato">
+    <div class="sh rv">
+      <span class="script">antes de<br>vir ✦</span>
+      <h2 class="display">Bom saber <span class="mint">& como chegar</span></h2>
+      <span></span>
+    </div>
+    <div class="info rv">
+      <div class="faq" id="faq"></div>
+      <div class="visit">
+        <iframe loading="lazy" title="Mapa do Camping Chapéu de Sol" src="https://maps.google.com/maps?q=Camping%20Chap%C3%A9u%20de%20Sol%2C%20Itu%20SP&z=13&output=embed"></iframe>
+        <div class="addr">
+          <img class="tr" src="/img/logo/simbolo-creme.png" alt=""><div style="flex:1"><b>Estrada do Pedregulho</b><span>Chácaras Primavera · Itu, SP · 13300-000</span></div>
+          <a class="btn btn-dark btn-sm" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Camping+Chap%C3%A9u+de+Sol+Itu+SP">Traçar rota <span class="ar" style="width:22px;height:22px">→</span></a>
+        </div>
+        <div class="vrow">
+          <a href="https://wa.me/5511963984355" target="_blank" rel="noopener"><small>Reservas</small><b>(11) 96398-4355</b></a>
+          <a href="tel:+551140230127"><small>Recepção</small><b>(11) 4023-0127</b></a>
+          <a href="https://instagram.com/campingchapeudesol" target="_blank" rel="noopener"><small>Instagram</small><b>@campingchapeudesol</b></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="rv">
+    <img class="wm" src="/img/logo/arvore.png" alt="" style="right:-40px;bottom:-60px;width:520px;opacity:.07">
+    <div class="foot-l">
+      <img class="foot-logo" src="/img/logo/logo-completo-creme.png" alt="Chapéu de Sol — Camping e Hospedagem">
+    </div>
+    <div class="foot-r">
+      <h2 class="display">O sol já tá<br><span class="mint">reservado.</span> Falta você.</h2>
+      <a href="#reservar" class="btn btn-cream">Montar minha estadia <span class="ar">→</span></a>
+    </div>
+  </footer>
+  <div class="fbot"><img src="/img/logo/nome-creme.png" alt="Chapéu de Sol"><span>© Camping Chapéu de Sol · Itu, SP</span><span>Instagram · Facebook — @campingchapeudesol</span></div>
+</div>
+
+<a class="wa" target="_blank" rel="noopener" href="https://wa.me/5511963984355" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></a>
+
+<script>
+let siteDados = null;
+const ph = (src, alt="", cls="", extra="") => `<div class="ph ${cls}">${src ? `<img src="${src}" alt="${alt}" loading="lazy" onerror="this.remove()">` : ""}${extra}</div>`;
+const STAR = '<svg viewBox="0 0 16 16"><path fill="currentColor" d="M8 0c.6 4.4 3.6 7.4 8 8-4.4.6-7.4 3.6-8 8-.6-4.4-3.6-7.4-8-8 4.4-.6 7.4-3.6 8-8z"/></svg>';
+const brl = v => "R$ " + v.toLocaleString("pt-BR", { minimumFractionDigits: v % 1 ? 2 : 0 });
+const iso = d => d.toISOString().slice(0, 10);
+const br = v => v.split("-").reverse().join("/");
+
+/* RENDERIZADORES */
+let heroTimer = null;
+let hi = 0;
+function renderHero(heroFotos) {
+  if (!heroFotos || !heroFotos.length) return;
+  const heroImg = document.getElementById("heroImg");
+  const heroCap = document.getElementById("heroCap");
+  const thumbs = document.getElementById("thumbs");
+  if (!heroImg || !thumbs) return;
+
+  thumbs.innerHTML = heroFotos.map((h, i) =>
+    ph(h.foto, h.legenda, i ? "" : "on").replace('class="ph', 'data-i="' + i + '" class="ph')
+  ).join("");
+
+  function setHero(i) {
+    heroImg.style.opacity = 0;
+    setTimeout(() => {
+      heroImg.src = heroFotos[i].foto;
+      heroImg.style.opacity = 1;
+      if (heroCap) heroCap.textContent = heroFotos[i].legenda;
+    }, 220);
+    document.querySelectorAll("#thumbs .ph").forEach((t, j) => t.classList.toggle("on", j === i));
+  }
+
+  heroImg.src = heroFotos[0].foto;
+  if (heroCap) heroCap.textContent = heroFotos[0].legenda;
+
+  thumbs.addEventListener("click", e => {
+    const t = e.target.closest(".ph");
+    if (!t) return;
+    hi = +t.dataset.i;
+    setHero(hi);
+    if (heroTimer) clearInterval(heroTimer);
+  });
+
+  if (heroTimer) clearInterval(heroTimer);
+  heroTimer = setInterval(() => {
+    hi = (hi + 1) % heroFotos.length;
+    setHero(hi);
+  }, 5000);
+}
+
+function renderLazer(lazerList) {
+  const container = document.getElementById("tall");
+  if (!container || !lazerList) return;
+  container.innerHTML = lazerList.map(l => {
+    const pos = (l.posicaoEtiqueta === "topo" || l.posicaoEtiqueta === "t") ? "t" : "b";
+    return ph(l.foto, l.texto, "", `<span class="chip ${pos}">${l.texto}</span>`);
+  }).join("");
+}
+
+const card = s => {
+  let chipText = s.etiqueta || "";
+  let priceHtml = "";
+  let btnText = "Reservar";
+
+  if (s.status === "esgotado") {
+    chipText = "Esgotado";
+    btnText = "Lista de espera";
+    if (s.preco !== null && s.preco !== undefined) {
+      priceHtml = `<small>${s.rotuloPreco || "a partir de"}</small>${brl(s.preco)}`;
+    }
+  } else if (s.status === "em-breve") {
+    chipText = s.etiqueta || "Em breve";
+    btnText = "Me avise";
+    if (s.preco !== null && s.preco !== undefined) {
+      priceHtml = `<small>${s.rotuloPreco || "a partir de"}</small>${brl(s.preco)}`;
+    } else {
+      priceHtml = `<small>lançamento</small>Lista de espera`;
+    }
+  } else {
+    // disponível ou padrão
+    if (s.preco !== null && s.preco !== undefined) {
+      priceHtml = `<small>${s.rotuloPreco || "a partir de"}</small>${brl(s.preco)}`;
+    }
+    btnText = "Reservar";
+  }
+
+  const fotoCapa = s.fotos && s.fotos.length ? s.fotos[0] : "";
+  return `<article class="card">
+  ${ph(fotoCapa, s.nome, "", chipText ? `<span class="chip t">${chipText}</span>` : "")}
+  <h3>${s.nome}</h3><p class="meta">${s.descricaoCurta || ""}</p>
+  <div class="row">
+    <div class="price">${priceHtml}</div>
+    <button class="btn btn-dark btn-sm pick" data-id="${s.id}">${btnText}</button>
+  </div></article>`;
+};
+
+function renderHospedagens(hospedagens) {
+  if (!hospedagens) return;
+  const trackA = document.getElementById("trackA");
+  const trackB = document.getElementById("trackB");
+  const acc = document.getElementById("acc");
+
+  const grupoA = hospedagens.filter(s => s.grupo === "hospedagem");
+  const grupoB = hospedagens.filter(s => s.grupo === "acampamento");
+
+  const listA = grupoA.length ? grupoA : hospedagens.slice(0, 5);
+  const listB = grupoB.length ? grupoB : hospedagens.slice(5);
+
+  if (trackA) trackA.innerHTML = listA.map(card).join("");
+  if (trackB) trackB.innerHTML = listB.map(card).join("");
+  if (acc) {
+    acc.innerHTML = hospedagens.map(s => `<option value="${s.id}">${s.nome}</option>`).join("");
+  }
+}
+
+let currentFeatIndex = 0;
+let currentFeatFotoIndex = 0;
+let destaques = [];
+
+function renderFeat() {
+  if (!destaques.length) return;
+  const f = destaques[currentFeatIndex];
+  const galCap = document.getElementById("galCap");
+  const featIntro = document.getElementById("featIntro");
+  const flist = document.getElementById("flist");
+  const galImg = document.getElementById("galImg");
+
+  if (galCap) galCap.textContent = f.nome;
+  if (featIntro) featIntro.textContent = f.destaque.intro || "";
+  if (flist) {
+    flist.innerHTML = (f.destaque.itens || []).map(x =>
+      `<div class="fi"><h5>${STAR}${x.titulo}</h5><p>${x.texto}</p></div>`
+    ).join("");
+  }
+
+  const fotos = f.fotos && f.fotos.length ? f.fotos : [];
+  if (fotos.length && galImg) {
+    galImg.style.opacity = 1;
+    galImg.src = fotos[currentFeatFotoIndex % fotos.length];
+  }
+
+  document.querySelectorAll("#tabs button").forEach(b =>
+    b.classList.toggle("on", b.dataset.k === f.id)
+  );
+}
+
+function setupDestaques(hospedagens) {
+  destaques = (hospedagens || []).filter(s => s.destaque && s.destaque.itens);
+  if (!destaques.length) return;
+
+  const tabs = document.getElementById("tabs");
+  if (tabs) {
+    tabs.innerHTML = destaques.map((d, idx) =>
+      `<button class="${idx === 0 ? "on" : ""}" data-k="${d.id}">${d.nome}</button>`
+    ).join("");
+  }
+
+  currentFeatIndex = 0;
+  currentFeatFotoIndex = 0;
+  renderFeat();
+}
+
+function renderFaq(faqList) {
+  const faqEl = document.getElementById("faq");
+  if (!faqEl || !faqList) return;
+
+  faqEl.innerHTML = faqList.map((q, i) =>
+    `<div class="q${i ? "" : " open"}"><button>${q.pergunta}<span>+</span></button><div class="a"><p>${q.resposta}</p></div></div>`
+  ).join("");
+
+  const openQ = q => {
+    const a = q.querySelector(".a");
+    if (a) a.style.maxHeight = q.classList.contains("open") ? a.scrollHeight + "px" : 0;
+  };
+
+  faqEl.querySelectorAll(".q").forEach(q => {
+    openQ(q);
+    const btn = q.querySelector("button");
+    if (btn) {
+      btn.onclick = () => {
+        faqEl.querySelectorAll(".q").forEach(o => {
+          if (o !== q) {
+            o.classList.remove("open");
+            openQ(o);
+          }
+        });
+        q.classList.toggle("open");
+        openQ(q);
+      };
+    }
+  });
+}
+
+function renderAviso(aviso) {
+  const banner = document.getElementById("avisoBanner");
+  const textoEl = document.getElementById("avisoTexto");
+  if (banner && textoEl) {
+    if (aviso && aviso.ativo && aviso.texto) {
+      textoEl.textContent = aviso.texto;
+      banner.style.display = "flex";
+    } else {
+      banner.style.display = "none";
+    }
+  }
+}
+
+function renderContato(contato) {
+  if (!contato) return;
+
+  if (contato.whatsapp) {
+    const waUrl = `https://wa.me/${contato.whatsapp}`;
+    const waFloating = document.querySelector("a.wa");
+    if (waFloating) waFloating.href = waUrl;
+
+    const heroPill = document.querySelector(".hr-top a.pill");
+    if (heroPill) {
+      heroPill.href = waUrl;
+      if (contato.whatsappTexto) {
+        heroPill.innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+          ${contato.whatsappTexto}`;
+      }
+    }
+
+    const vrowWa = document.querySelector(".vrow a[href*='wa.me']");
+    if (vrowWa) {
+      vrowWa.href = waUrl;
+      if (contato.whatsappTexto) {
+        const b = vrowWa.querySelector("b");
+        if (b) b.textContent = contato.whatsappTexto;
+      }
+    }
+  }
+
+  if (contato.recepcao) {
+    const vrowTel = document.querySelector(".vrow a[href^='tel:']");
+    if (vrowTel) {
+      const cleanTel = contato.recepcao.replace(/\D/g, "");
+      vrowTel.href = `tel:+55${cleanTel}`;
+      const b = vrowTel.querySelector("b");
+      if (b) b.textContent = contato.recepcao;
+    }
+  }
+
+  if (contato.instagram) {
+    const cleanIg = contato.instagram.replace(/^@/, "");
+    const vrowIg = document.querySelector(".vrow a[href*='instagram']");
+    if (vrowIg) {
+      vrowIg.href = `https://instagram.com/${cleanIg}`;
+      const b = vrowIg.querySelector("b");
+      if (b) b.textContent = `@${cleanIg}`;
+    }
+    const fbotIg = document.querySelector(".fbot span:last-child");
+    if (fbotIg) {
+      fbotIg.textContent = `Instagram · Facebook — @${cleanIg}`;
+    }
+  }
+
+  if (contato.endereco) {
+    const addrEl = document.querySelector(".addr div");
+    if (addrEl) {
+      const parts = contato.endereco.split("·");
+      if (parts.length > 1) {
+        addrEl.innerHTML = `<b>${parts[0].trim()}</b><span>${parts.slice(1).join("·").trim()}</span>`;
+      } else {
+        addrEl.innerHTML = `<b>${contato.endereco}</b>`;
+      }
+    }
+  }
+}
+
+/* EVENTOS DE NAVEGAÇÃO E FORMULÁRIO */
+document.querySelectorAll(".arrows").forEach(a => {
+  const t = document.getElementById(a.dataset.for), [p, n] = a.querySelectorAll("button");
+  const step = () => {
+    const cardEl = t.querySelector(".card");
+    return cardEl ? cardEl.offsetWidth + 10 : 300;
+  };
+  p.onclick = () => t.scrollBy({ left: -step(), behavior: "smooth" });
+  n.onclick = () => t.scrollBy({ left: step(), behavior: "smooth" });
+});
+
+const tabs = document.getElementById("tabs");
+if (tabs) {
+  tabs.onclick = e => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    const idx = destaques.findIndex(d => d.id === b.dataset.k);
+    if (idx !== -1) {
+      currentFeatIndex = idx;
+      currentFeatFotoIndex = 0;
+      renderFeat();
+    }
+  };
+}
+
+const gPrev = document.getElementById("gPrev");
+if (gPrev) {
+  gPrev.onclick = () => {
+    if (!destaques.length) return;
+    const totalFotos = (destaques[currentFeatIndex].fotos || []).length || 1;
+    currentFeatFotoIndex = (currentFeatFotoIndex + totalFotos - 1) % totalFotos;
+    renderFeat();
+  };
+}
+
+const gNext = document.getElementById("gNext");
+if (gNext) {
+  gNext.onclick = () => {
+    if (!destaques.length) return;
+    const totalFotos = (destaques[currentFeatIndex].fotos || []).length || 1;
+    currentFeatFotoIndex = (currentFeatFotoIndex + 1) % totalFotos;
+    renderFeat();
+  };
+}
+
+const featBtn = document.getElementById("featBtn");
+if (featBtn) {
+  featBtn.onclick = () => {
+    if (!destaques.length) return;
+    const acc = document.getElementById("acc");
+    if (acc) acc.value = destaques[currentFeatIndex].id;
+  };
+}
+
+/* DATAS DA RESERVA */
+const ci = document.getElementById("ci"), co = document.getElementById("co");
+if (ci && co) {
+  const d0 = new Date(); d0.setDate(d0.getDate() + 7); const d1 = new Date(d0); d1.setDate(d1.getDate() + 2);
+  ci.value = iso(d0); co.value = iso(d1); ci.min = iso(new Date());
+  ci.onchange = () => {
+    if (co.value <= ci.value) {
+      const d = new Date(ci.value);
+      d.setDate(d.getDate() + 1);
+      co.value = iso(d);
+    }
+  };
+}
+
+/* ENVIO PELO WHATSAPP */
+const sendBtn = document.getElementById("send");
+if (sendBtn) {
+  sendBtn.onclick = () => {
+    const acc = document.getElementById("acc");
+    if (!siteDados || !siteDados.hospedagens || !acc) return;
+    const s = siteDados.hospedagens.find(x => x.id === acc.value);
+    if (!s) return;
+    let msg = "";
+    if (s.status === "esgotado" || s.status === "em-breve") {
+      msg = `Olá! Quero entrar na lista de espera de *${s.nome}* do Camping Chapéu de Sol.`;
+    } else {
+      msg = `Olá! Quero reservar no Camping Chapéu de Sol ☀\n\n• Hospedagem: *${s.nome}*\n• Entrada: ${br(ci.value)}\n• Saída: ${br(co.value)}\n• Hóspedes: ${document.getElementById("gu").value}\n\nPode me passar disponibilidade e valor?`;
+    }
+    const wa = siteDados.contato && siteDados.contato.whatsapp ? siteDados.contato.whatsapp : "5511963984355";
+    window.open(`https://wa.me/${wa}?text=${encodeURIComponent(msg)}`, "_blank");
+  };
+}
+
+/* CLIQUE NOS BOTÕES DOS CARDS */
+document.addEventListener("click", e => {
+  const b = e.target.closest(".pick");
+  if (!b) return;
+  const acc = document.getElementById("acc");
+  if (acc) acc.value = b.dataset.id;
+  const reservar = document.getElementById("reservar");
+  if (reservar) reservar.scrollIntoView({ behavior: "smooth", block: "center" });
+});
+
+/* SPLASH SCREEN & REVEAL */
+addEventListener("load", () => setTimeout(() => {
+  const splash = document.getElementById("splash");
+  if (splash) splash.classList.add("out");
+}, 900));
+setTimeout(() => {
+  const splash = document.getElementById("splash");
+  if (splash) splash.classList.add("out");
+}, 3000);
+
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) {
+    e.target.classList.add("in");
+    io.unobserve(e.target);
+  }
+}), { threshold: .1 });
+document.querySelectorAll(".rv").forEach(el => io.observe(el));
+
+/* CARREGAMENTO DE DADOS (FETCH DADOS.JSON) */
+fetch("/dados.json")
+  .then(res => {
+    if (!res.ok) throw new Error("Status " + res.status);
+    return res.json();
+  })
+  .then(data => {
+    siteDados = data;
+    renderAviso(data.aviso);
+    renderContato(data.contato);
+    renderHero(data.heroFotos);
+    renderLazer(data.lazer);
+    renderHospedagens(data.hospedagens);
+    setupDestaques(data.hospedagens);
+    renderFaq(data.faq);
+  })
+  .catch(err => {
+    console.warn("Não foi possível carregar dados.json:", err.message);
+  });
+</script>
+</body>
+</html>

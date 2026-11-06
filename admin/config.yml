@@ -1,0 +1,4 @@
+# Configuração do Decap CMS (próxima etapa)
+backend:
+  name: git-gateway
+  branch: main

@@ -1,0 +1,281 @@
+{
+  "aviso": {
+    "ativo": true,
+    "texto": "Feriado de 20/11 com reservas abertas — as vagas costumam acabar antes."
+  },
+  "contato": {
+    "whatsapp": "5511963984355",
+    "whatsappTexto": "(11) 96398-4355",
+    "recepcao": "(11) 4023-0127",
+    "instagram": "campingchapeudesol",
+    "endereco": "Estrada do Pedregulho, Chácaras Primavera · Itu, SP · 13300-000"
+  },
+  "heroFotos": [
+    {
+      "foto": "/fotos/piscina-central.jpg",
+      "legenda": "Piscina central"
+    },
+    {
+      "foto": "/fotos/chale-madeira.jpg",
+      "legenda": "Chalé Madeira"
+    },
+    {
+      "foto": "/fotos/pesqueiro.jpg",
+      "legenda": "Pesqueiro"
+    },
+    {
+      "foto": "/fotos/tirolesa.jpg",
+      "legenda": "Tirolesa"
+    }
+  ],
+  "lazer": [
+    {
+      "foto": "/fotos/piscina-feijao.jpg",
+      "texto": "Cinco piscinas, uma delas aquecida",
+      "posicaoEtiqueta": "topo"
+    },
+    {
+      "foto": "/fotos/tirolesa.jpg",
+      "texto": "Tirolesa no meio do verde",
+      "posicaoEtiqueta": "topo"
+    },
+    {
+      "foto": "/fotos/pesqueiro.jpg",
+      "texto": "Pesca esportiva com aluguel de equipamento",
+      "posicaoEtiqueta": "base"
+    },
+    {
+      "foto": "/fotos/quadra-tenis.jpg",
+      "texto": "Tênis, beach tennis e poliesportiva",
+      "posicaoEtiqueta": "topo"
+    },
+    {
+      "foto": "/fotos/piscina-infantil.jpg",
+      "texto": "Piscina das crianças, toboágua e playground",
+      "posicaoEtiqueta": "base"
+    }
+  ],
+  "hospedagens": [
+    {
+      "id": "chale-madeira",
+      "nome": "Chalé Madeira",
+      "grupo": "hospedagem",
+      "etiqueta": "O clássico",
+      "descricaoCurta": "Cama de casal, mezanino e cozinha integrada · café + almoço",
+      "preco": 312,
+      "rotuloPreco": "a partir de",
+      "status": "disponivel",
+      "fotos": [
+        "/fotos/chale-madeira.jpg",
+        "/fotos/pesqueiro.jpg",
+        "/fotos/tirolesa.jpg"
+      ],
+      "destaque": {
+        "intro": "O clássico que todo mundo ama: simples, aconchegante, com sala e cozinha integradas, mezanino e varanda virada pro verde.",
+        "itens": [
+          {
+            "titulo": "Cama de casal",
+            "texto": "Quarto aconchegante, todo em madeira."
+          },
+          {
+            "titulo": "Café e almoço inclusos",
+            "texto": "Buffet completo ao lado das piscinas. Bebidas e sobremesas à parte."
+          },
+          {
+            "titulo": "Cozinha integrada",
+            "texto": "Geladeira, fogão com forno e TV no mesmo ambiente."
+          },
+          {
+            "titulo": "Mezanino",
+            "texto": "Dois colchões de solteiro pra quem vem junto."
+          },
+          {
+            "titulo": "Banheiro privativo",
+            "texto": "Chuveiro elétrico, tomadas 220V."
+          },
+          {
+            "titulo": "Varanda com rede",
+            "texto": "Ganchos prontos pra sua rede."
+          },
+          {
+            "titulo": "Churrasqueira com pia",
+            "texto": "Área externa só sua. Traga a grelha."
+          },
+          {
+            "titulo": "Aceita pet pequeno",
+            "texto": "Na coleira, com taxa de R$ 50 por noite."
+          }
+        ]
+      }
+    },
+    {
+      "id": "chale-vip",
+      "nome": "Chalé VIP",
+      "grupo": "hospedagem",
+      "etiqueta": "Mais espaço",
+      "descricaoCurta": "Pra família inteira · ar-condicionado e sala com TV",
+      "preco": 390,
+      "rotuloPreco": "a partir de",
+      "status": "disponivel",
+      "fotos": [
+        "/fotos/chale-vip.jpg",
+        "/fotos/piscina-central.jpg",
+        "/fotos/piscina-feijao.jpg"
+      ],
+      "destaque": {
+        "intro": "O Chalé VIP foi pensado pra família inteira: quarto com cama de casal, mezanino com três colchões de solteiro e cozinha equipada para até seis pessoas.",
+        "itens": [
+          {
+            "titulo": "Quarto climatizado",
+            "texto": "Cama de casal, ar-condicionado, ventilador de teto e abajur."
+          },
+          {
+            "titulo": "Café e almoço inclusos",
+            "texto": "Buffet completo ao lado das piscinas. Bebidas e sobremesas à parte."
+          },
+          {
+            "titulo": "Cozinha equipada",
+            "texto": "Geladeira, fogão com forno, pia, mesa e louça para 6 pessoas."
+          },
+          {
+            "titulo": "Sala com TV",
+            "texto": "Um canto pra descansar depois de um dia inteiro de piscina."
+          },
+          {
+            "titulo": "Mezanino",
+            "texto": "Três colchões de solteiro — a parte preferida da criançada."
+          },
+          {
+            "titulo": "Churrasqueira com pia",
+            "texto": "Área externa com mesa e bancos. Traga só a grelha."
+          },
+          {
+            "titulo": "Varanda com rede",
+            "texto": "Ganchos prontos pra pendurar a sua rede no fim da tarde."
+          },
+          {
+            "titulo": "Banheiro privativo",
+            "texto": "Chuveiro elétrico. Toda a tomada é 220V."
+          }
+        ]
+      }
+    },
+    {
+      "id": "pousada",
+      "nome": "Pousada",
+      "grupo": "hospedagem",
+      "etiqueta": "Conforto",
+      "descricaoCurta": "Conforto de quarto, cercado de natureza",
+      "preco": 343.2,
+      "rotuloPreco": "a partir de",
+      "status": "disponivel",
+      "fotos": [
+        "/fotos/pousada.jpg"
+      ]
+    },
+    {
+      "id": "suite-container",
+      "nome": "Suíte Container",
+      "grupo": "hospedagem",
+      "etiqueta": "Diferente",
+      "descricaoCurta": "Casal + solteiro, frigobar e churrasqueira externa",
+      "preco": 343.2,
+      "rotuloPreco": "a partir de",
+      "status": "disponivel",
+      "fotos": [
+        "/fotos/suite-container.jpg"
+      ]
+    },
+    {
+      "id": "trailer",
+      "nome": "Trailer",
+      "grupo": "hospedagem",
+      "etiqueta": "Sobre rodas",
+      "descricaoCurta": "Casal + beliche infantil, banheiro e ar-condicionado",
+      "preco": 700,
+      "rotuloPreco": "a partir de",
+      "status": "disponivel",
+      "fotos": [
+        "/fotos/trailer.jpg"
+      ]
+    },
+    {
+      "id": "area-barracas",
+      "nome": "Área de Barracas",
+      "grupo": "acampamento",
+      "etiqueta": "Raiz",
+      "descricaoCurta": "Sombra de eucalipto, banheiros e cozinha coletiva",
+      "preco": 70,
+      "rotuloPreco": "a partir de",
+      "status": "disponivel",
+      "fotos": [
+        "/fotos/area-barracas.jpg"
+      ]
+    },
+    {
+      "id": "ready-camp",
+      "nome": "Ready Camp",
+      "grupo": "acampamento",
+      "etiqueta": "Já montado",
+      "descricaoCurta": "Barraca montada e colchonete — é só chegar",
+      "preco": 150,
+      "rotuloPreco": "a partir de",
+      "status": "disponivel",
+      "fotos": [
+        "/fotos/foto-capa.jpg"
+      ]
+    },
+    {
+      "id": "day-use",
+      "nome": "Day Use",
+      "grupo": "acampamento",
+      "etiqueta": "Sem pernoite",
+      "descricaoCurta": "Piscinas, quadras e lazer o dia inteiro",
+      "preco": 70,
+      "rotuloPreco": "a partir de",
+      "status": "disponivel",
+      "fotos": [
+        "/fotos/piscina.jpg"
+      ]
+    },
+    {
+      "id": "glamping",
+      "nome": "Glamping",
+      "grupo": "acampamento",
+      "etiqueta": "Em breve",
+      "descricaoCurta": "Conforto, exclusividade e natureza",
+      "preco": null,
+      "rotuloPreco": "a partir de",
+      "status": "em-breve",
+      "fotos": [
+        "/fotos/piscina-central.jpg"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "O que está incluso nos chalés?",
+      "resposta": "Nos Chalés Madeira e VIP a diária inclui café da manhã e almoço no buffet (bebidas e sobremesas à parte). Traga roupa de cama e banho, utensílios extras, grelha de churrasqueira e sua rede."
+    },
+    {
+      "pergunta": "Posso levar meu pet?",
+      "resposta": "Cães de pequeno porte são bem-vindos na área de camping, Chalé Madeira, Chalé VIP e Ready Camp, por R$ 50 por animal/noite. Sempre na coleira e fora das piscinas e do restaurante."
+    },
+    {
+      "pergunta": "Como funciona o pagamento?",
+      "resposta": "Nos chalés, 50% via transferência para garantir a reserva e o restante no check-in. Barracas e day use são pagos na chegada. Aceitamos dinheiro, Mastercard e Visa — acima de R$ 300, em até 3x no cartão."
+    },
+    {
+      "pergunta": "E se eu precisar cancelar?",
+      "resposta": "Até 15 dias antes: 90% de reembolso. De 2 a 15 dias: 50%. Menos de 2 dias: sem reembolso. Remarcação com 7 dias de antecedência, uma vez, conforme disponibilidade."
+    },
+    {
+      "pergunta": "Tem Wi-Fi e horário de silêncio?",
+      "resposta": "Wi-Fi gratuito na sorveteria e no restaurante. Silêncio das 22h às 8h — o som da noite aqui é dos grilos."
+    },
+    {
+      "pergunta": "Aniversariante tem cortesia?",
+      "resposta": "Sim! O aniversariante ganha day use ou camping de cortesia, apresentando documento."
+    }
+  ]
+}
