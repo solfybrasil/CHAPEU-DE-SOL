@@ -1,0 +1,1396 @@
+{
+  "fotos\\galeria": [
+    {
+      "name": "a-identificar-01.jpg",
+      "src": "/fotos\\galeria\\a-identificar-01.jpg",
+      "dims": "1333x1000",
+      "size": 446572,
+      "orig": "lazer-2022-02-19.jpg"
+    },
+    {
+      "name": "a-identificar-02.jpg",
+      "src": "/fotos\\galeria\\a-identificar-02.jpg",
+      "dims": "1440x1920",
+      "size": 1463103,
+      "orig": "EA81B6C0-9B3D-4046-A58D-4776B49DB14C.jpg"
+    },
+    {
+      "name": "a-identificar-03.jpg",
+      "src": "/fotos\\galeria\\a-identificar-03.jpg",
+      "dims": "2560x1707",
+      "size": 759641,
+      "orig": "261e27c4-2d2b-4d65-8ffd-ddde549136b8-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-04.jpg",
+      "src": "/fotos\\galeria\\a-identificar-04.jpg",
+      "dims": "1280x853",
+      "size": 255418,
+      "orig": "5f64e1d9-c12c-4c04-9cf0-ac3b7edcc769.jpg"
+    },
+    {
+      "name": "a-identificar-05.jpg",
+      "src": "/fotos\\galeria\\a-identificar-05.jpg",
+      "dims": "1707x2560",
+      "size": 562465,
+      "orig": "8dbb8150-ecdb-4031-87d5-13f09b38b28d-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-06.jpg",
+      "src": "/fotos\\galeria\\a-identificar-06.jpg",
+      "dims": "1920x2560",
+      "size": 1420350,
+      "orig": "IMG_3447-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-07.jpg",
+      "src": "/fotos\\galeria\\a-identificar-07.jpg",
+      "dims": "1920x2560",
+      "size": 649683,
+      "orig": "IMG_3450-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-08.jpg",
+      "src": "/fotos\\galeria\\a-identificar-08.jpg",
+      "dims": "1920x2560",
+      "size": 267819,
+      "orig": "IMG_3451-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-09.jpg",
+      "src": "/fotos\\galeria\\a-identificar-09.jpg",
+      "dims": "1920x2560",
+      "size": 654245,
+      "orig": "IMG_3458-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-10.jpg",
+      "src": "/fotos\\galeria\\a-identificar-10.jpg",
+      "dims": "1920x2560",
+      "size": 642954,
+      "orig": "IMG_3459-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-11.jpg",
+      "src": "/fotos\\galeria\\a-identificar-11.jpg",
+      "dims": "1920x2560",
+      "size": 735048,
+      "orig": "IMG_3460-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-12.jpg",
+      "src": "/fotos\\galeria\\a-identificar-12.jpg",
+      "dims": "1920x2560",
+      "size": 849849,
+      "orig": "IMG_3462-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-13.jpg",
+      "src": "/fotos\\galeria\\a-identificar-13.jpg",
+      "dims": "1920x2560",
+      "size": 924614,
+      "orig": "IMG_3465-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-14.jpg",
+      "src": "/fotos\\galeria\\a-identificar-14.jpg",
+      "dims": "1920x2560",
+      "size": 1468318,
+      "orig": "IMG_3467-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-15.jpg",
+      "src": "/fotos\\galeria\\a-identificar-15.jpg",
+      "dims": "1920x2560",
+      "size": 1202511,
+      "orig": "IMG_3468-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-16.jpg",
+      "src": "/fotos\\galeria\\a-identificar-16.jpg",
+      "dims": "1920x2560",
+      "size": 1439892,
+      "orig": "IMG_3469-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-17.jpg",
+      "src": "/fotos\\galeria\\a-identificar-17.jpg",
+      "dims": "1920x2560",
+      "size": 1347554,
+      "orig": "IMG_3471-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-18.jpg",
+      "src": "/fotos\\galeria\\a-identificar-18.jpg",
+      "dims": "1920x2560",
+      "size": 1527668,
+      "orig": "IMG_3472-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-19.jpg",
+      "src": "/fotos\\galeria\\a-identificar-19.jpg",
+      "dims": "1920x2560",
+      "size": 1130542,
+      "orig": "IMG_3475-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-20.jpg",
+      "src": "/fotos\\galeria\\a-identificar-20.jpg",
+      "dims": "1920x2560",
+      "size": 1024168,
+      "orig": "IMG_3482-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-21.jpg",
+      "src": "/fotos\\galeria\\a-identificar-21.jpg",
+      "dims": "1920x2560",
+      "size": 1247262,
+      "orig": "IMG_3484-scaled.jpg"
+    },
+    {
+      "name": "a-identificar-22.jpg",
+      "src": "/fotos\\galeria\\a-identificar-22.jpg",
+      "dims": "1200x800",
+      "size": 905410,
+      "orig": "ocamping-01.jpg"
+    },
+    {
+      "name": "a-identificar-23.jpg",
+      "src": "/fotos\\galeria\\a-identificar-23.jpg",
+      "dims": "1200x800",
+      "size": 905410,
+      "orig": "ocamping-01-1.jpg"
+    },
+    {
+      "name": "a-identificar-24.jpg",
+      "src": "/fotos\\galeria\\a-identificar-24.jpg",
+      "dims": "1200x800",
+      "size": 483427,
+      "orig": "ocamping-02.jpg"
+    },
+    {
+      "name": "a-identificar-25.jpg",
+      "src": "/fotos\\galeria\\a-identificar-25.jpg",
+      "dims": "1200x800",
+      "size": 635015,
+      "orig": "home-01.jpg"
+    },
+    {
+      "name": "a-identificar-26.jpg",
+      "src": "/fotos\\galeria\\a-identificar-26.jpg",
+      "dims": "1200x800",
+      "size": 669228,
+      "orig": "home-02.jpg"
+    },
+    {
+      "name": "a-identificar-27.jpg",
+      "src": "/fotos\\galeria\\a-identificar-27.jpg",
+      "dims": "1200x800",
+      "size": 669228,
+      "orig": "home-02-1.jpg"
+    },
+    {
+      "name": "a-identificar-28.jpg",
+      "src": "/fotos\\galeria\\a-identificar-28.jpg",
+      "dims": "1200x800",
+      "size": 477687,
+      "orig": "home-04.jpg"
+    },
+    {
+      "name": "a-identificar-29.jpg",
+      "src": "/fotos\\galeria\\a-identificar-29.jpg",
+      "dims": "768x512",
+      "size": 54769,
+      "orig": "img-9723-768x512-1.jpg"
+    },
+    {
+      "name": "a-identificar-30.jpg",
+      "src": "/fotos\\galeria\\a-identificar-30.jpg",
+      "dims": "667x1000",
+      "size": 257196,
+      "orig": "img-0237.jpg"
+    },
+    {
+      "name": "a-identificar-31.jpg",
+      "src": "/fotos\\galeria\\a-identificar-31.jpg",
+      "dims": "2048x1365",
+      "size": 652712,
+      "orig": "img-0456.jpg"
+    },
+    {
+      "name": "a-identificar-32.jpg",
+      "src": "/fotos\\galeria\\a-identificar-32.jpg",
+      "dims": "800x533",
+      "size": 268947,
+      "orig": "imagem-861.jpg"
+    },
+    {
+      "name": "a-identificar-33.jpg",
+      "src": "/fotos\\galeria\\a-identificar-33.jpg",
+      "dims": "2048x1365",
+      "size": 573257,
+      "orig": "img-4433-2.jpg"
+    },
+    {
+      "name": "a-identificar-34.jpg",
+      "src": "/fotos\\galeria\\a-identificar-34.jpg",
+      "dims": "1000x667",
+      "size": 263993,
+      "orig": "imagem-542.jpg"
+    },
+    {
+      "name": "a-identificar-35.jpg",
+      "src": "/fotos\\galeria\\a-identificar-35.jpg",
+      "dims": "1000x667",
+      "size": 163811,
+      "orig": "imagem-467.jpg"
+    },
+    {
+      "name": "a-identificar-36.jpg",
+      "src": "/fotos\\galeria\\a-identificar-36.jpg",
+      "dims": "1000x667",
+      "size": 125047,
+      "orig": "img-9943-1.jpg"
+    },
+    {
+      "name": "a-identificar-37.jpg",
+      "src": "/fotos\\galeria\\a-identificar-37.jpg",
+      "dims": "650x470",
+      "size": 89416,
+      "orig": "img-6484-650x470-1.jpg"
+    },
+    {
+      "name": "a-identificar-38.jpg",
+      "src": "/fotos\\galeria\\a-identificar-38.jpg",
+      "dims": "650x470",
+      "size": 111716,
+      "orig": "img-6506-650x470-1.jpg"
+    },
+    {
+      "name": "a-identificar-39.jpg",
+      "src": "/fotos\\galeria\\a-identificar-39.jpg",
+      "dims": "667x700",
+      "size": 161441,
+      "orig": "img-6522-667x700-1.jpg"
+    },
+    {
+      "name": "a-identificar-40.jpg",
+      "src": "/fotos\\galeria\\a-identificar-40.jpg",
+      "dims": "667x1000",
+      "size": 76187,
+      "orig": "img-6532.jpg"
+    },
+    {
+      "name": "a-identificar-41.jpg",
+      "src": "/fotos\\galeria\\a-identificar-41.jpg",
+      "dims": "768x512",
+      "size": 123141,
+      "orig": "img-0442-768x512-1.jpg"
+    },
+    {
+      "name": "a-identificar-42.jpg",
+      "src": "/fotos\\galeria\\a-identificar-42.jpg",
+      "dims": "533x800",
+      "size": 256224,
+      "orig": "img-0443.jpg"
+    },
+    {
+      "name": "a-identificar-43.jpg",
+      "src": "/fotos\\galeria\\a-identificar-43.jpg",
+      "dims": "800x533",
+      "size": 182427,
+      "orig": "img-1078.jpg"
+    },
+    {
+      "name": "a-identificar-44.jpg",
+      "src": "/fotos\\galeria\\a-identificar-44.jpg",
+      "dims": "800x533",
+      "size": 273476,
+      "orig": "img-5574.jpg"
+    },
+    {
+      "name": "a-identificar-45.jpg",
+      "src": "/fotos\\galeria\\a-identificar-45.jpg",
+      "dims": "533x800",
+      "size": 204374,
+      "orig": "img-3411.jpg"
+    },
+    {
+      "name": "a-identificar-46.jpg",
+      "src": "/fotos\\galeria\\a-identificar-46.jpg",
+      "dims": "800x533",
+      "size": 206643,
+      "orig": "img-2264.jpg"
+    },
+    {
+      "name": "a-identificar-47.jpg",
+      "src": "/fotos\\galeria\\a-identificar-47.jpg",
+      "dims": "800x533",
+      "size": 108455,
+      "orig": "img-9881.jpg"
+    },
+    {
+      "name": "a-identificar-48.jpg",
+      "src": "/fotos\\galeria\\a-identificar-48.jpg",
+      "dims": "1333x1000",
+      "size": 474384,
+      "orig": "lazer-2022-02-01.jpg"
+    },
+    {
+      "name": "a-identificar-49.jpg",
+      "src": "/fotos\\galeria\\a-identificar-49.jpg",
+      "dims": "1333x1000",
+      "size": 419254,
+      "orig": "lazer-2022-02-02.jpg"
+    },
+    {
+      "name": "a-identificar-50.jpg",
+      "src": "/fotos\\galeria\\a-identificar-50.jpg",
+      "dims": "1333x1000",
+      "size": 420487,
+      "orig": "lazer-2022-02-03.jpg"
+    },
+    {
+      "name": "a-identificar-51.jpg",
+      "src": "/fotos\\galeria\\a-identificar-51.jpg",
+      "dims": "1333x1000",
+      "size": 427421,
+      "orig": "lazer-2022-02-04.jpg"
+    },
+    {
+      "name": "a-identificar-52.jpg",
+      "src": "/fotos\\galeria\\a-identificar-52.jpg",
+      "dims": "1333x1000",
+      "size": 451405,
+      "orig": "lazer-2022-02-05.jpg"
+    },
+    {
+      "name": "a-identificar-53.jpg",
+      "src": "/fotos\\galeria\\a-identificar-53.jpg",
+      "dims": "1333x1000",
+      "size": 548395,
+      "orig": "lazer-2022-02-06.jpg"
+    },
+    {
+      "name": "a-identificar-54.jpg",
+      "src": "/fotos\\galeria\\a-identificar-54.jpg",
+      "dims": "1333x1000",
+      "size": 395602,
+      "orig": "lazer-2022-02-07.jpg"
+    },
+    {
+      "name": "a-identificar-55.jpg",
+      "src": "/fotos\\galeria\\a-identificar-55.jpg",
+      "dims": "1333x1000",
+      "size": 415571,
+      "orig": "lazer-2022-02-08.jpg"
+    },
+    {
+      "name": "a-identificar-56.jpg",
+      "src": "/fotos\\galeria\\a-identificar-56.jpg",
+      "dims": "1333x1000",
+      "size": 378408,
+      "orig": "lazer-2022-02-09.jpg"
+    },
+    {
+      "name": "a-identificar-57.jpg",
+      "src": "/fotos\\galeria\\a-identificar-57.jpg",
+      "dims": "1000x1500",
+      "size": 1782701,
+      "orig": "lazer-2022-02-11.jpg"
+    },
+    {
+      "name": "a-identificar-58.jpg",
+      "src": "/fotos\\galeria\\a-identificar-58.jpg",
+      "dims": "1000x1500",
+      "size": 2414171,
+      "orig": "lazer-2022-02-12.jpg"
+    },
+    {
+      "name": "a-identificar-59.jpg",
+      "src": "/fotos\\galeria\\a-identificar-59.jpg",
+      "dims": "1001x1500",
+      "size": 1755998,
+      "orig": "lazer-2022-02-13.jpg"
+    },
+    {
+      "name": "a-identificar-60.jpg",
+      "src": "/fotos\\galeria\\a-identificar-60.jpg",
+      "dims": "1333x1000",
+      "size": 554956,
+      "orig": "lazer-2022-02-14.jpg"
+    },
+    {
+      "name": "a-identificar-61.jpg",
+      "src": "/fotos\\galeria\\a-identificar-61.jpg",
+      "dims": "1333x1000",
+      "size": 522959,
+      "orig": "lazer-2022-02-15.jpg"
+    },
+    {
+      "name": "a-identificar-62.jpg",
+      "src": "/fotos\\galeria\\a-identificar-62.jpg",
+      "dims": "1333x1000",
+      "size": 343460,
+      "orig": "lazer-2022-02-16.jpg"
+    },
+    {
+      "name": "a-identificar-63.jpg",
+      "src": "/fotos\\galeria\\a-identificar-63.jpg",
+      "dims": "1333x1000",
+      "size": 321283,
+      "orig": "lazer-2022-02-17.jpg"
+    },
+    {
+      "name": "a-identificar-64.jpg",
+      "src": "/fotos\\galeria\\a-identificar-64.jpg",
+      "dims": "1333x1000",
+      "size": 422570,
+      "orig": "lazer-2022-02-18.jpg"
+    },
+    {
+      "name": "a-identificar-65.jpg",
+      "src": "/fotos\\galeria\\a-identificar-65.jpg",
+      "dims": "667x1000",
+      "size": 897477,
+      "orig": "lazer-2022-02-20.jpg"
+    },
+    {
+      "name": "a-identificar-66.jpg",
+      "src": "/fotos\\galeria\\a-identificar-66.jpg",
+      "dims": "1333x1000",
+      "size": 402147,
+      "orig": "lazer-2022-02-10.jpg"
+    },
+    {
+      "name": "area-de-barracas-quadra-de-tenis.png",
+      "src": "/fotos\\galeria\\area-de-barracas-quadra-de-tenis.png",
+      "dims": "300x225",
+      "size": 162250,
+      "orig": "area-barracas-quadra-de-tenis-300x225-1.png"
+    },
+    {
+      "name": "capa-site.jpg",
+      "src": "/fotos\\galeria\\capa-site.jpg",
+      "dims": "2560x1920",
+      "size": 1280515,
+      "orig": "FotoCapaSite-scaled.jpg"
+    },
+    {
+      "name": "pesqueiro-antigo.jpg",
+      "src": "/fotos\\galeria\\pesqueiro-antigo.jpg",
+      "dims": "800x533",
+      "size": 123399,
+      "orig": "Pesqueiro-velha.jpeg"
+    },
+    {
+      "name": "pesqueiro.jpg",
+      "src": "/fotos\\galeria\\pesqueiro.jpg",
+      "dims": "1280x653",
+      "size": 189933,
+      "orig": "Pesqueiro.jpeg"
+    },
+    {
+      "name": "piscina-central.jpg",
+      "src": "/fotos\\galeria\\piscina-central.jpg",
+      "dims": "2560x1707",
+      "size": 684897,
+      "orig": "FOTO-PISCINA-CENTRAL-scaled.jpg"
+    },
+    {
+      "name": "piscina-feijao-2.jpg",
+      "src": "/fotos\\galeria\\piscina-feijao-2.jpg",
+      "dims": "2560x1920",
+      "size": 1355991,
+      "orig": "Piscinafeijao-scaled.jpg"
+    },
+    {
+      "name": "piscina-feijao-antiga.jpg",
+      "src": "/fotos\\galeria\\piscina-feijao-antiga.jpg",
+      "dims": "800x533",
+      "size": 98055,
+      "orig": "Piscina-Feijao-velha.jpeg"
+    },
+    {
+      "name": "piscina-feijao.jpg",
+      "src": "/fotos\\galeria\\piscina-feijao.jpg",
+      "dims": "1600x1200",
+      "size": 517135,
+      "orig": "Piscina-feijao.jpeg"
+    },
+    {
+      "name": "piscina-infantil-2.jpg",
+      "src": "/fotos\\galeria\\piscina-infantil-2.jpg",
+      "dims": "2560x1707",
+      "size": 620651,
+      "orig": "Pisciinfantil25-scaled.jpg"
+    },
+    {
+      "name": "piscina-infantil.jpg",
+      "src": "/fotos\\galeria\\piscina-infantil.jpg",
+      "dims": "1280x960",
+      "size": 231607,
+      "orig": "Foto-piscina-das-criancas-.jpeg"
+    },
+    {
+      "name": "piscina.jpg",
+      "src": "/fotos\\galeria\\piscina.jpg",
+      "dims": "1280x960",
+      "size": 218650,
+      "orig": "Imagem-piscina.jpeg"
+    },
+    {
+      "name": "quadra-de-tenis.jpg",
+      "src": "/fotos\\galeria\\quadra-de-tenis.jpg",
+      "dims": "800x533",
+      "size": 117583,
+      "orig": "Quadra-de-tenis.jpeg"
+    },
+    {
+      "name": "tirolesa.jpg",
+      "src": "/fotos\\galeria\\tirolesa.jpg",
+      "dims": "1600x1200",
+      "size": 657878,
+      "orig": "Imagem-tirolesa.jpeg"
+    }
+  ],
+  "fotos\\hospedagens\\barraca": [
+    {
+      "name": "area-de-barracas-eucaliptos.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\area-de-barracas-eucaliptos.jpg",
+      "dims": "1280x720",
+      "size": 179880,
+      "orig": ""
+    },
+    {
+      "name": "banheiro-camping.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\banheiro-camping.jpg",
+      "dims": "1000x1500",
+      "size": 252858,
+      "orig": ""
+    },
+    {
+      "name": "camping-01.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-01.jpg",
+      "dims": "1333x1000",
+      "size": 454401,
+      "orig": ""
+    },
+    {
+      "name": "camping-02.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-02.jpg",
+      "dims": "1333x1000",
+      "size": 277902,
+      "orig": ""
+    },
+    {
+      "name": "camping-03.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-03.jpg",
+      "dims": "1333x1000",
+      "size": 428612,
+      "orig": ""
+    },
+    {
+      "name": "camping-04.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-04.jpg",
+      "dims": "1333x1000",
+      "size": 344857,
+      "orig": ""
+    },
+    {
+      "name": "camping-05.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-05.jpg",
+      "dims": "1333x1000",
+      "size": 354596,
+      "orig": ""
+    },
+    {
+      "name": "camping-07.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-07.jpg",
+      "dims": "1333x1000",
+      "size": 410633,
+      "orig": ""
+    },
+    {
+      "name": "camping-08.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-08.jpg",
+      "dims": "1333x1000",
+      "size": 336832,
+      "orig": ""
+    },
+    {
+      "name": "camping-09.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-09.jpg",
+      "dims": "1333x1000",
+      "size": 343962,
+      "orig": ""
+    },
+    {
+      "name": "camping-10.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-10.jpg",
+      "dims": "1333x1000",
+      "size": 338353,
+      "orig": ""
+    },
+    {
+      "name": "camping-2022-v02.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-2022-v02.jpg",
+      "dims": "1500x844",
+      "size": 240596,
+      "orig": ""
+    },
+    {
+      "name": "camping-2022.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-2022.jpg",
+      "dims": "1500x1000",
+      "size": 326492,
+      "orig": ""
+    },
+    {
+      "name": "camping-22-02-17.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-22-02-17.jpg",
+      "dims": "1333x1000",
+      "size": 338353,
+      "orig": ""
+    },
+    {
+      "name": "camping-area-do-galpao.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-area-do-galpao.jpg",
+      "dims": "800x533",
+      "size": 253607,
+      "orig": ""
+    },
+    {
+      "name": "camping-barracas.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-barracas.jpg",
+      "dims": "800x533",
+      "size": 206669,
+      "orig": ""
+    },
+    {
+      "name": "camping-foto.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-foto.jpg",
+      "dims": "533x700",
+      "size": 159087,
+      "orig": ""
+    },
+    {
+      "name": "camping-geral.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-geral.jpg",
+      "dims": "1333x1000",
+      "size": 336941,
+      "orig": ""
+    },
+    {
+      "name": "camping-gopro.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\camping-gopro.jpg",
+      "dims": "1080x810",
+      "size": 171757,
+      "orig": ""
+    },
+    {
+      "name": "capa.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\capa.jpg",
+      "dims": "960x1280",
+      "size": 207738,
+      "orig": ""
+    },
+    {
+      "name": "cozinha-comunitaria-2.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\cozinha-comunitaria-2.jpg",
+      "dims": "1333x1000",
+      "size": 340162,
+      "orig": ""
+    },
+    {
+      "name": "cozinha-comunitaria-3.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\cozinha-comunitaria-3.jpg",
+      "dims": "2560x1707",
+      "size": 1160072,
+      "orig": ""
+    },
+    {
+      "name": "cozinha-comunitaria-4.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\cozinha-comunitaria-4.jpg",
+      "dims": "2560x1707",
+      "size": 1160072,
+      "orig": ""
+    },
+    {
+      "name": "cozinha-comunitaria.jpg",
+      "src": "/fotos\\hospedagens\\barraca\\cozinha-comunitaria.jpg",
+      "dims": "1333x1000",
+      "size": 342897,
+      "orig": ""
+    }
+  ],
+  "fotos\\hospedagens\\chale-madeira": [
+    {
+      "name": "capa-2.jpg",
+      "src": "/fotos\\hospedagens\\chale-madeira\\capa-2.jpg",
+      "dims": "1600x1398",
+      "size": 624173,
+      "orig": ""
+    },
+    {
+      "name": "capa.jpg",
+      "src": "/fotos\\hospedagens\\chale-madeira\\capa.jpg",
+      "dims": "2048x1790",
+      "size": 870923,
+      "orig": ""
+    },
+    {
+      "name": "chale-madeira-01.jpg",
+      "src": "/fotos\\hospedagens\\chale-madeira\\chale-madeira-01.jpg",
+      "dims": "750x1000",
+      "size": 218168,
+      "orig": ""
+    },
+    {
+      "name": "chale-madeira-02.jpg",
+      "src": "/fotos\\hospedagens\\chale-madeira\\chale-madeira-02.jpg",
+      "dims": "750x1000",
+      "size": 101331,
+      "orig": ""
+    },
+    {
+      "name": "chale-madeira-03.jpg",
+      "src": "/fotos\\hospedagens\\chale-madeira\\chale-madeira-03.jpg",
+      "dims": "750x1000",
+      "size": 81899,
+      "orig": ""
+    },
+    {
+      "name": "chale-madeira-04.jpg",
+      "src": "/fotos\\hospedagens\\chale-madeira\\chale-madeira-04.jpg",
+      "dims": "750x1000",
+      "size": 102121,
+      "orig": ""
+    },
+    {
+      "name": "chale-madeira-05.jpg",
+      "src": "/fotos\\hospedagens\\chale-madeira\\chale-madeira-05.jpg",
+      "dims": "1537x2049",
+      "size": 1495103,
+      "orig": ""
+    },
+    {
+      "name": "chale-madeira-06.jpg",
+      "src": "/fotos\\hospedagens\\chale-madeira\\chale-madeira-06.jpg",
+      "dims": "1537x2049",
+      "size": 2090064,
+      "orig": ""
+    },
+    {
+      "name": "chale-madeira-07.jpg",
+      "src": "/fotos\\hospedagens\\chale-madeira\\chale-madeira-07.jpg",
+      "dims": "1536x2049",
+      "size": 862569,
+      "orig": ""
+    },
+    {
+      "name": "chale-madeira-08.jpg",
+      "src": "/fotos\\hospedagens\\chale-madeira\\chale-madeira-08.jpg",
+      "dims": "1537x2049",
+      "size": 1603468,
+      "orig": ""
+    },
+    {
+      "name": "chale-madeira-09.jpg",
+      "src": "/fotos\\hospedagens\\chale-madeira\\chale-madeira-09.jpg",
+      "dims": "1536x2048",
+      "size": 943863,
+      "orig": ""
+    },
+    {
+      "name": "chale-madeira-10.jpg",
+      "src": "/fotos\\hospedagens\\chale-madeira\\chale-madeira-10.jpg",
+      "dims": "1536x2048",
+      "size": 1645996,
+      "orig": ""
+    }
+  ],
+  "fotos\\hospedagens\\chale-vip": [
+    {
+      "name": "capa-2.jpg",
+      "src": "/fotos\\hospedagens\\chale-vip\\capa-2.jpg",
+      "dims": "1333x1000",
+      "size": 441981,
+      "orig": ""
+    },
+    {
+      "name": "capa.jpg",
+      "src": "/fotos\\hospedagens\\chale-vip\\capa.jpg",
+      "dims": "1333x1000",
+      "size": 441981,
+      "orig": ""
+    },
+    {
+      "name": "chale-vip-01.jpg",
+      "src": "/fotos\\hospedagens\\chale-vip\\chale-vip-01.jpg",
+      "dims": "1536x2048",
+      "size": 660967,
+      "orig": ""
+    },
+    {
+      "name": "chale-vip-02.jpg",
+      "src": "/fotos\\hospedagens\\chale-vip\\chale-vip-02.jpg",
+      "dims": "1536x2048",
+      "size": 1166307,
+      "orig": ""
+    },
+    {
+      "name": "chale-vip-03.jpg",
+      "src": "/fotos\\hospedagens\\chale-vip\\chale-vip-03.jpg",
+      "dims": "1920x2560",
+      "size": 518406,
+      "orig": ""
+    },
+    {
+      "name": "chale-vip-04.jpg",
+      "src": "/fotos\\hospedagens\\chale-vip\\chale-vip-04.jpg",
+      "dims": "1920x2560",
+      "size": 436296,
+      "orig": ""
+    },
+    {
+      "name": "chale-vip-05.jpg",
+      "src": "/fotos\\hospedagens\\chale-vip\\chale-vip-05.jpg",
+      "dims": "1920x2560",
+      "size": 253297,
+      "orig": ""
+    },
+    {
+      "name": "chale-vip-06.jpg",
+      "src": "/fotos\\hospedagens\\chale-vip\\chale-vip-06.jpg",
+      "dims": "1920x2560",
+      "size": 270062,
+      "orig": ""
+    },
+    {
+      "name": "chale-vip-07.jpg",
+      "src": "/fotos\\hospedagens\\chale-vip\\chale-vip-07.jpg",
+      "dims": "1920x2560",
+      "size": 317362,
+      "orig": ""
+    },
+    {
+      "name": "chale-vip-08.jpg",
+      "src": "/fotos\\hospedagens\\chale-vip\\chale-vip-08.jpg",
+      "dims": "1920x2560",
+      "size": 501874,
+      "orig": ""
+    },
+    {
+      "name": "chale-vip-09.jpg",
+      "src": "/fotos\\hospedagens\\chale-vip\\chale-vip-09.jpg",
+      "dims": "1920x2560",
+      "size": 294972,
+      "orig": ""
+    },
+    {
+      "name": "chale-vip-10.jpg",
+      "src": "/fotos\\hospedagens\\chale-vip\\chale-vip-10.jpg",
+      "dims": "1920x2560",
+      "size": 433579,
+      "orig": ""
+    }
+  ],
+  "fotos\\hospedagens\\day-use": [
+    {
+      "name": "capa.jpg",
+      "src": "/fotos\\hospedagens\\day-use\\capa.jpg",
+      "dims": "1333x1000",
+      "size": 446572,
+      "orig": ""
+    },
+    {
+      "name": "quadra-de-tenis.jpg",
+      "src": "/fotos\\hospedagens\\day-use\\quadra-de-tenis.jpg",
+      "dims": "800x533",
+      "size": 212862,
+      "orig": ""
+    }
+  ],
+  "fotos\\hospedagens\\glamping": [
+    {
+      "name": "capa.png",
+      "src": "/fotos\\hospedagens\\glamping\\capa.png",
+      "dims": "1500x1500",
+      "size": 2397940,
+      "orig": ""
+    }
+  ],
+  "fotos\\hospedagens\\pousada": [
+    {
+      "name": "capa.jpg",
+      "src": "/fotos\\hospedagens\\pousada\\capa.jpg",
+      "dims": "1920x2560",
+      "size": 853855,
+      "orig": ""
+    },
+    {
+      "name": "fachada.jpg",
+      "src": "/fotos\\hospedagens\\pousada\\fachada.jpg",
+      "dims": "1000x667",
+      "size": 115898,
+      "orig": ""
+    },
+    {
+      "name": "pousada-01.jpg",
+      "src": "/fotos\\hospedagens\\pousada\\pousada-01.jpg",
+      "dims": "1536x2048",
+      "size": 601305,
+      "orig": ""
+    },
+    {
+      "name": "pousada-02.jpg",
+      "src": "/fotos\\hospedagens\\pousada\\pousada-02.jpg",
+      "dims": "1536x2048",
+      "size": 744629,
+      "orig": ""
+    },
+    {
+      "name": "pousada-03.jpg",
+      "src": "/fotos\\hospedagens\\pousada\\pousada-03.jpg",
+      "dims": "1536x2048",
+      "size": 604653,
+      "orig": ""
+    },
+    {
+      "name": "pousada-04.jpg",
+      "src": "/fotos\\hospedagens\\pousada\\pousada-04.jpg",
+      "dims": "1536x2048",
+      "size": 682354,
+      "orig": ""
+    },
+    {
+      "name": "pousada-interior.jpg",
+      "src": "/fotos\\hospedagens\\pousada\\pousada-interior.jpg",
+      "dims": "667x1000",
+      "size": 76187,
+      "orig": ""
+    }
+  ],
+  "fotos\\hospedagens\\ready-camp": [
+    {
+      "name": "banheiros.jpg",
+      "src": "/fotos\\hospedagens\\ready-camp\\banheiros.jpg",
+      "dims": "1333x1000",
+      "size": 325800,
+      "orig": ""
+    },
+    {
+      "name": "capa.png",
+      "src": "/fotos\\hospedagens\\ready-camp\\capa.png",
+      "dims": "1254x1254",
+      "size": 3156389,
+      "orig": ""
+    },
+    {
+      "name": "ready-camp-01.jpg",
+      "src": "/fotos\\hospedagens\\ready-camp\\ready-camp-01.jpg",
+      "dims": "1200x1600",
+      "size": 482586,
+      "orig": ""
+    },
+    {
+      "name": "ready-camp-02.jpg",
+      "src": "/fotos\\hospedagens\\ready-camp\\ready-camp-02.jpg",
+      "dims": "1200x1600",
+      "size": 441851,
+      "orig": ""
+    },
+    {
+      "name": "ready-camp-03.jpg",
+      "src": "/fotos\\hospedagens\\ready-camp\\ready-camp-03.jpg",
+      "dims": "1200x1600",
+      "size": 474941,
+      "orig": ""
+    },
+    {
+      "name": "ready-camp-04.jpg",
+      "src": "/fotos\\hospedagens\\ready-camp\\ready-camp-04.jpg",
+      "dims": "720x1280",
+      "size": 246921,
+      "orig": ""
+    },
+    {
+      "name": "ready-camp-05.jpg",
+      "src": "/fotos\\hospedagens\\ready-camp\\ready-camp-05.jpg",
+      "dims": "1920x2560",
+      "size": 1248587,
+      "orig": ""
+    },
+    {
+      "name": "ready-camp.jpg",
+      "src": "/fotos\\hospedagens\\ready-camp\\ready-camp.jpg",
+      "dims": "960x1280",
+      "size": 346257,
+      "orig": ""
+    }
+  ],
+  "fotos\\hospedagens\\suite-container": [
+    {
+      "name": "capa.jpg",
+      "src": "/fotos\\hospedagens\\suite-container\\capa.jpg",
+      "dims": "2048x1145",
+      "size": 406347,
+      "orig": ""
+    },
+    {
+      "name": "suite-container-01.jpg",
+      "src": "/fotos\\hospedagens\\suite-container\\suite-container-01.jpg",
+      "dims": "1194x2560",
+      "size": 345057,
+      "orig": ""
+    },
+    {
+      "name": "suite-container-02.jpg",
+      "src": "/fotos\\hospedagens\\suite-container\\suite-container-02.jpg",
+      "dims": "2560x1431",
+      "size": 586744,
+      "orig": ""
+    },
+    {
+      "name": "suite-container-03.jpg",
+      "src": "/fotos\\hospedagens\\suite-container\\suite-container-03.jpg",
+      "dims": "1920x2560",
+      "size": 490848,
+      "orig": ""
+    },
+    {
+      "name": "suite-container-04.jpg",
+      "src": "/fotos\\hospedagens\\suite-container\\suite-container-04.jpg",
+      "dims": "1920x2560",
+      "size": 513472,
+      "orig": ""
+    },
+    {
+      "name": "suite-container-05.jpg",
+      "src": "/fotos\\hospedagens\\suite-container\\suite-container-05.jpg",
+      "dims": "2560x1920",
+      "size": 809437,
+      "orig": ""
+    }
+  ],
+  "fotos\\hospedagens\\trailer": [
+    {
+      "name": "capa.jpg",
+      "src": "/fotos\\hospedagens\\trailer\\capa.jpg",
+      "dims": "2048x1536",
+      "size": 582772,
+      "orig": ""
+    },
+    {
+      "name": "trailer-01.jpg",
+      "src": "/fotos\\hospedagens\\trailer\\trailer-01.jpg",
+      "dims": "1200x1600",
+      "size": 267383,
+      "orig": ""
+    },
+    {
+      "name": "trailer-02.jpg",
+      "src": "/fotos\\hospedagens\\trailer\\trailer-02.jpg",
+      "dims": "1000x750",
+      "size": 151708,
+      "orig": ""
+    },
+    {
+      "name": "trailer-03.jpg",
+      "src": "/fotos\\hospedagens\\trailer\\trailer-03.jpg",
+      "dims": "1200x1600",
+      "size": 167724,
+      "orig": ""
+    },
+    {
+      "name": "trailer-04.jpg",
+      "src": "/fotos\\hospedagens\\trailer\\trailer-04.jpg",
+      "dims": "1200x1600",
+      "size": 187321,
+      "orig": ""
+    },
+    {
+      "name": "trailer-banheiro.jpg",
+      "src": "/fotos\\hospedagens\\trailer\\trailer-banheiro.jpg",
+      "dims": "1200x1600",
+      "size": 304457,
+      "orig": ""
+    },
+    {
+      "name": "trailer-beliche.jpg",
+      "src": "/fotos\\hospedagens\\trailer\\trailer-beliche.jpg",
+      "dims": "1200x1600",
+      "size": 228702,
+      "orig": ""
+    },
+    {
+      "name": "trailer-exterior-2.jpg",
+      "src": "/fotos\\hospedagens\\trailer\\trailer-exterior-2.jpg",
+      "dims": "1600x1200",
+      "size": 308672,
+      "orig": ""
+    },
+    {
+      "name": "trailer-exterior.jpg",
+      "src": "/fotos\\hospedagens\\trailer\\trailer-exterior.jpg",
+      "dims": "1600x1200",
+      "size": 388718,
+      "orig": ""
+    },
+    {
+      "name": "trailer-interior-2.jpg",
+      "src": "/fotos\\hospedagens\\trailer\\trailer-interior-2.jpg",
+      "dims": "1200x1600",
+      "size": 187321,
+      "orig": ""
+    },
+    {
+      "name": "trailer-interior.jpg",
+      "src": "/fotos\\hospedagens\\trailer\\trailer-interior.jpg",
+      "dims": "1200x1600",
+      "size": 181799,
+      "orig": ""
+    }
+  ],
+  "fotos\\tabelas-de-preco\\barraca": [
+    {
+      "name": "barraca-01-barracaoutubrodezembro.jpg",
+      "src": "/fotos\\tabelas-de-preco\\barraca\\barraca-01-barracaoutubrodezembro.jpg",
+      "dims": "1080x1350",
+      "size": 1871858,
+      "orig": ""
+    },
+    {
+      "name": "barraca-02-valoresnovossite-post-para-instagram-4_5.jpg",
+      "src": "/fotos\\tabelas-de-preco\\barraca\\barraca-02-valoresnovossite-post-para-instagram-4_5.jpg",
+      "dims": "1080x1350",
+      "size": 667842,
+      "orig": ""
+    },
+    {
+      "name": "barraca-03-barracanatal.jpg",
+      "src": "/fotos\\tabelas-de-preco\\barraca\\barraca-03-barracanatal.jpg",
+      "dims": "1080x1350",
+      "size": 1920021,
+      "orig": ""
+    },
+    {
+      "name": "barraca-04-barraca2027.jpg",
+      "src": "/fotos\\tabelas-de-preco\\barraca\\barraca-04-barraca2027.jpg",
+      "dims": "1080x1350",
+      "size": 1913833,
+      "orig": ""
+    }
+  ],
+  "fotos\\tabelas-de-preco\\chale-madeira": [
+    {
+      "name": "chale-madeira-01-outubrodezembromadeira.jpg",
+      "src": "/fotos\\tabelas-de-preco\\chale-madeira\\chale-madeira-01-outubrodezembromadeira.jpg",
+      "dims": "1080x1350",
+      "size": 1852839,
+      "orig": ""
+    },
+    {
+      "name": "chale-madeira-02-outubrofdsmadeira.jpg",
+      "src": "/fotos\\tabelas-de-preco\\chale-madeira\\chale-madeira-02-outubrofdsmadeira.jpg",
+      "dims": "1080x1350",
+      "size": 1858776,
+      "orig": ""
+    },
+    {
+      "name": "chale-madeira-03-17-3.jpg",
+      "src": "/fotos\\tabelas-de-preco\\chale-madeira\\chale-madeira-03-17-3.jpg",
+      "dims": "1080x1350",
+      "size": 358257,
+      "orig": ""
+    },
+    {
+      "name": "chale-madeira-04-madeiranatal2.jpg",
+      "src": "/fotos\\tabelas-de-preco\\chale-madeira\\chale-madeira-04-madeiranatal2.jpg",
+      "dims": "1080x1350",
+      "size": 1869700,
+      "orig": ""
+    },
+    {
+      "name": "chale-madeira-05-madeira2027.jpg",
+      "src": "/fotos\\tabelas-de-preco\\chale-madeira\\chale-madeira-05-madeira2027.jpg",
+      "dims": "1080x1350",
+      "size": 1868192,
+      "orig": ""
+    }
+  ],
+  "fotos\\tabelas-de-preco\\chale-vip": [
+    {
+      "name": "chale-vip-01-vipsemana.jpg",
+      "src": "/fotos\\tabelas-de-preco\\chale-vip\\chale-vip-01-vipsemana.jpg",
+      "dims": "1080x1350",
+      "size": 1649800,
+      "orig": ""
+    },
+    {
+      "name": "chale-vip-02-vipfds.jpg",
+      "src": "/fotos\\tabelas-de-preco\\chale-vip\\chale-vip-02-vipfds.jpg",
+      "dims": "1080x1350",
+      "size": 1647347,
+      "orig": ""
+    },
+    {
+      "name": "chale-vip-03-18-3.jpg",
+      "src": "/fotos\\tabelas-de-preco\\chale-vip\\chale-vip-03-18-3.jpg",
+      "dims": "1080x1350",
+      "size": 314149,
+      "orig": ""
+    },
+    {
+      "name": "chale-vip-04-vipnatal.jpg",
+      "src": "/fotos\\tabelas-de-preco\\chale-vip\\chale-vip-04-vipnatal.jpg",
+      "dims": "1080x1350",
+      "size": 1680048,
+      "orig": ""
+    }
+  ],
+  "fotos\\tabelas-de-preco\\day-use": [
+    {
+      "name": "day-use-01-dayusedezembro.jpg",
+      "src": "/fotos\\tabelas-de-preco\\day-use\\day-use-01-dayusedezembro.jpg",
+      "dims": "1080x1350",
+      "size": 1681901,
+      "orig": ""
+    }
+  ],
+  "fotos\\tabelas-de-preco\\pousada": [
+    {
+      "name": "pousada-01-pousadasemana2.jpg",
+      "src": "/fotos\\tabelas-de-preco\\pousada\\pousada-01-pousadasemana2.jpg",
+      "dims": "1080x1350",
+      "size": 1453021,
+      "orig": ""
+    },
+    {
+      "name": "pousada-02-pousadafds2.jpg",
+      "src": "/fotos\\tabelas-de-preco\\pousada\\pousada-02-pousadafds2.jpg",
+      "dims": "1080x1350",
+      "size": 1447916,
+      "orig": ""
+    },
+    {
+      "name": "pousada-03-19-3.jpg",
+      "src": "/fotos\\tabelas-de-preco\\pousada\\pousada-03-19-3.jpg",
+      "dims": "1080x1350",
+      "size": 275260,
+      "orig": ""
+    },
+    {
+      "name": "pousada-04-pousadanatal2.jpg",
+      "src": "/fotos\\tabelas-de-preco\\pousada\\pousada-04-pousadanatal2.jpg",
+      "dims": "1080x1350",
+      "size": 1518867,
+      "orig": ""
+    },
+    {
+      "name": "pousada-05-pousada2027.jpg",
+      "src": "/fotos\\tabelas-de-preco\\pousada\\pousada-05-pousada2027.jpg",
+      "dims": "1080x1350",
+      "size": 1510934,
+      "orig": ""
+    }
+  ],
+  "fotos\\tabelas-de-preco\\ready-camp": [
+    {
+      "name": "ready-camp-01-readycampoutubrodezembro.jpg",
+      "src": "/fotos\\tabelas-de-preco\\ready-camp\\ready-camp-01-readycampoutubrodezembro.jpg",
+      "dims": "1080x1350",
+      "size": 1754418,
+      "orig": ""
+    },
+    {
+      "name": "ready-camp-02-valoresnovossite-post-para-instagram-4_5-3.jpg",
+      "src": "/fotos\\tabelas-de-preco\\ready-camp\\ready-camp-02-valoresnovossite-post-para-instagram-4_5-3.jpg",
+      "dims": "1080x1350",
+      "size": 663454,
+      "orig": ""
+    },
+    {
+      "name": "ready-camp-03-readycampnatal.jpg",
+      "src": "/fotos\\tabelas-de-preco\\ready-camp\\ready-camp-03-readycampnatal.jpg",
+      "dims": "1080x1350",
+      "size": 1789526,
+      "orig": ""
+    },
+    {
+      "name": "ready-camp-04-readycamp2027.jpg",
+      "src": "/fotos\\tabelas-de-preco\\ready-camp\\ready-camp-04-readycamp2027.jpg",
+      "dims": "1080x1350",
+      "size": 1776140,
+      "orig": ""
+    }
+  ],
+  "fotos\\tabelas-de-preco\\suite-container": [
+    {
+      "name": "suite-container-01-containerdiasemana.jpg",
+      "src": "/fotos\\tabelas-de-preco\\suite-container\\suite-container-01-containerdiasemana.jpg",
+      "dims": "1080x1350",
+      "size": 1086423,
+      "orig": ""
+    },
+    {
+      "name": "suite-container-02-conntainerfds.jpg",
+      "src": "/fotos\\tabelas-de-preco\\suite-container\\suite-container-02-conntainerfds.jpg",
+      "dims": "1080x1350",
+      "size": 1077950,
+      "orig": ""
+    },
+    {
+      "name": "suite-container-03-20-1.jpg",
+      "src": "/fotos\\tabelas-de-preco\\suite-container\\suite-container-03-20-1.jpg",
+      "dims": "1080x1350",
+      "size": 230464,
+      "orig": ""
+    },
+    {
+      "name": "suite-container-04-containernatal2.jpg",
+      "src": "/fotos\\tabelas-de-preco\\suite-container\\suite-container-04-containernatal2.jpg",
+      "dims": "1080x1350",
+      "size": 1141743,
+      "orig": ""
+    },
+    {
+      "name": "suite-container-05-containeranonovo2.jpg",
+      "src": "/fotos\\tabelas-de-preco\\suite-container\\suite-container-05-containeranonovo2.jpg",
+      "dims": "1080x1350",
+      "size": 1134116,
+      "orig": ""
+    }
+  ],
+  "fotos\\tabelas-de-preco\\trailer": [
+    {
+      "name": "trailer-01-trailersemana.jpg",
+      "src": "/fotos\\tabelas-de-preco\\trailer\\trailer-01-trailersemana.jpg",
+      "dims": "1080x1350",
+      "size": 1201897,
+      "orig": ""
+    },
+    {
+      "name": "trailer-02-trailerfds.jpg",
+      "src": "/fotos\\tabelas-de-preco\\trailer\\trailer-02-trailerfds.jpg",
+      "dims": "1080x1350",
+      "size": 1199601,
+      "orig": ""
+    },
+    {
+      "name": "trailer-03-16-2.jpg",
+      "src": "/fotos\\tabelas-de-preco\\trailer\\trailer-03-16-2.jpg",
+      "dims": "1080x1350",
+      "size": 243313,
+      "orig": ""
+    },
+    {
+      "name": "trailer-04-trailernatal.jpg",
+      "src": "/fotos\\tabelas-de-preco\\trailer\\trailer-04-trailernatal.jpg",
+      "dims": "1080x1350",
+      "size": 1243944,
+      "orig": ""
+    }
+  ]
+}

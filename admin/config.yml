@@ -23,7 +23,7 @@ collections:
       preview: false
     files:
       - name: "dados"
-        label: "Página Principal"
+        label: "Página Principal e Hospedagens"
         file: "dados.json"
         format: "json"
         fields:
@@ -48,7 +48,23 @@ collections:
               - { label: "Instagram (usuário sem @)", name: "instagram", widget: "string" }
               - { label: "Endereço completo", name: "endereco", widget: "string" }
 
-          # ============ FOTOS DO TOPO (HERO) ============
+                    # ============ RESERVA ============
+          - label: "Configurações de Reserva"
+            name: "reserva"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Taxa Pet (R$ por noite)", name: "taxaPet", widget: "number", value_type: "float", default: 50 }
+              - label: "Feriados"
+                name: "feriados"
+                widget: "list"
+                collapsed: true
+                summary: "{{fields.data}} — {{fields.nome}}"
+                fields:
+                  - { label: "Data (AAAA-MM-DD)", name: "data", widget: "string", hint: "Ex: 2026-11-20" }
+                  - { label: "Nome do feriado", name: "nome", widget: "string" }
+
+# ============ FOTOS DO TOPO (HERO) ============
           - label: "Fotos do topo"
             name: "heroFotos"
             widget: "list"
@@ -60,6 +76,21 @@ collections:
               - { label: "Foto", name: "foto", widget: "image" }
               - { label: "Legenda", name: "legenda", widget: "string" }
 
+          # ============ BANNER DO QUE ESTÁ INCLUSO ============
+          - label: "Banner do que está incluso"
+            name: "bannerIncluso"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Foto de fundo", name: "foto", widget: "image", default: "/fotos/hero-aerea.jpg" }
+              - { label: "Frase do topo (kicker)", name: "frase", widget: "string", default: "a sua diária inclui ✦" }
+              - { label: "Título (Linha 1)", name: "tituloLinha1", widget: "string", default: "Tudo isso já vem" }
+              - { label: "Título (Linha 2 - destaque verde)", name: "tituloLinha2", widget: "string", default: "na sua hospedagem" }
+              - { label: "Descrição", name: "descricao", widget: "text", default: "Piscinas, toboágua, tirolesa, quadras, salão de jogos e playground — sem pagar nada a mais." }
+              - { label: "Texto do botão", name: "botaoTexto", widget: "string", default: "Ver hospedagens" }
+              - { label: "Link do botão", name: "botaoLink", widget: "string", default: "#hospedagens" }
+              - { label: "Nota de rodapé", name: "nota", widget: "string", default: "Pesqueiro, paintball e aluguel de barraca são cobrados à parte." }
+
           # ============ LAZER ============
           - label: "Lazer"
             name: "lazer"
@@ -67,8 +98,16 @@ collections:
             collapsed: false
             summary: "{{fields.texto}}"
             fields:
-              - { label: "Foto", name: "foto", widget: "image" }
-              - { label: "Texto da atividade", name: "texto", widget: "string" }
+              - { label: "Foto principal do cartão", name: "foto", widget: "image" }
+              - { label: "Texto do cartão", name: "texto", widget: "string" }
+              - { label: "Título do Drawer/Painel", name: "titulo", widget: "string", required: false }
+              - { label: "Descrição detalhada", name: "descricao", widget: "text", required: false }
+              - { label: "Horários e Observações", name: "observacoes", widget: "string", required: false }
+              - label: "Fotos da atividade (Galeria)"
+                name: "fotos"
+                widget: "list"
+                required: false
+                field: { label: "Foto", name: "foto", widget: "image" }
               - label: "Posição da etiqueta"
                 name: "posicaoEtiqueta"
                 widget: "select"
@@ -83,7 +122,8 @@ collections:
             collapsed: false
             summary: "{{fields.nome}} — R$ {{fields.preco}}"
             fields:
-              - { label: "ID interno (ex: chale-vip)", name: "id", widget: "string" }
+              - { label: "ID interno / Slug (ex: chale-vip)", name: "id", widget: "string" }
+              - { label: "Slug amigável da rota", name: "slug", widget: "string" }
               - { label: "Nome", name: "nome", widget: "string" }
               - label: "Grupo"
                 name: "grupo"
@@ -91,22 +131,74 @@ collections:
                 options:
                   - { label: "Hospedagem com teto", value: "hospedagem" }
                   - { label: "Acampamento e day use", value: "acampamento" }
-              - { label: "Etiqueta (Selo)", name: "etiqueta", widget: "string" }
-              - { label: "Descrição curta", name: "descricaoCurta", widget: "string" }
-              - { label: "Preço (R$)", name: "preco", widget: "number", value_type: "float", required: false }
+              - { label: "Etiqueta (Selo)", name: "etiqueta", widget: "string", required: false }
+              - { label: "Slogan em destaque", name: "slogan", widget: "string", required: false }
+              - { label: "Descrição curta (Home)", name: "descricaoCurta", widget: "string", required: false }
+              - { label: "Descrição completa (Página)", name: "descricao", widget: "text", required: false }
+              - { label: "Capacidade de hóspedes", name: "capacidade", widget: "string", required: false }
+              - { label: "Refeições inclusas?", name: "refeicoesInclusas", widget: "boolean", default: false }
+              - { label: "Aceita Pet?", name: "aceitaPet", widget: "boolean", default: false }
+              - { label: "Voltagem das tomadas", name: "voltagem", widget: "string", default: "220V", required: false }
+              - { label: "Horários de check-in e check-out", name: "horarios", widget: "string", required: false }
+              - { label: "Preço base (R$)", name: "preco", widget: "number", value_type: "float", required: false }
+              - { label: "Cobrado por (ex: adulto)", name: "precoPor", widget: "string", default: "adulto" }
+              - label: "Tipo de Reserva"
+                name: "tipoReserva"
+                widget: "select"
+                default: "diaria"
+                options:
+                  - { label: "Diária (com pernoite)", value: "diaria" }
+                  - { label: "Dia (sem pernoite - Day Use)", value: "dia" }
               - { label: "Rótulo do preço", name: "rotuloPreco", widget: "string", default: "a partir de", required: false }
-              - label: "Status"
+              - label: "Status da Acomodação"
                 name: "status"
                 widget: "select"
+                default: "disponivel"
                 options:
                   - { label: "Disponível", value: "disponivel" }
-                  - { label: "Esgotado", value: "esgotado" }
+                  - { label: "Esgotado nas próximas datas", value: "esgotado" }
                   - { label: "Em breve", value: "em-breve" }
-              - label: "Fotos (a 1ª é a capa)"
+              - label: "Fotos da galeria (a 1ª é a capa)"
                 name: "fotos"
                 widget: "list"
+                collapsed: true
                 field: { label: "Foto", name: "foto", widget: "image" }
-              - label: "Destaque (opcional, só chalés)"
+              - label: "Artes de preço (Tabelas de valores)"
+                name: "tabelasPreco"
+                widget: "list"
+                collapsed: true
+                required: false
+                field: { label: "Arte de Preço", name: "arte", widget: "image" }
+              - label: "Estrutura por cômodos"
+                name: "estrutura"
+                widget: "list"
+                collapsed: true
+                required: false
+                fields:
+                  - { label: "Título do Cômodo/Área", name: "titulo", widget: "string" }
+                  - label: "Itens deste cômodo"
+                    name: "itens"
+                    widget: "list"
+                    field: { label: "Item", name: "item", widget: "string" }
+              - label: "Itens Inclusos na diária"
+                name: "incluso"
+                widget: "list"
+                collapsed: true
+                required: false
+                field: { label: "Item incluso", name: "item", widget: "string" }
+              - label: "O que trazer (Traga com você)"
+                name: "levar"
+                widget: "list"
+                collapsed: true
+                required: false
+                field: { label: "Item a trazer", name: "item", widget: "string" }
+              - label: "Regras específicas da hospedagem"
+                name: "regras"
+                widget: "list"
+                collapsed: true
+                required: false
+                field: { label: "Regra", name: "regra", widget: "string" }
+              - label: "Destaque da Home (opcional, só chalés)"
                 name: "destaque"
                 widget: "object"
                 collapsed: true
@@ -120,6 +212,28 @@ collections:
                     fields:
                       - { label: "Título", name: "titulo", widget: "string" }
                       - { label: "Descrição", name: "texto", widget: "string" }
+
+          # ============ REGRAS GERAIS ============
+          - label: "Regras Gerais do Camping"
+            name: "regrasGerais"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Política de Pets", name: "pets", widget: "text", required: false }
+              - { label: "Condições de Pagamento", name: "pagamento", widget: "text", required: false }
+              - { label: "Política de Cancelamento", name: "cancelamento", widget: "text", required: false }
+              - { label: "Lei do Silêncio", name: "silencio", widget: "text", required: false }
+              - { label: "Wi-Fi e Conectividade", name: "wifi", widget: "text", required: false }
+              - { label: "Regra de Aniversariante", name: "aniversariante", widget: "text", required: false }
+              - label: "Opcionais Pagos"
+                name: "opcionaisPagos"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Nome da Atividade", name: "nome", widget: "string" }
+                  - { label: "Observações", name: "obs", widget: "string", required: false }
+                  - { label: "WhatsApp do Responsável", name: "zap", widget: "string", required: false }
+                  - { label: "Nome do Responsável", name: "responsavel", widget: "string", required: false }
 
           # ============ PERGUNTAS FREQUENTES ============
           - label: "Perguntas frequentes"

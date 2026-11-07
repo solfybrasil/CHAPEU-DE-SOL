@@ -32,27 +32,39 @@
     {
       "foto": "/fotos/piscina-feijao.jpg",
       "texto": "Cinco piscinas, uma delas aquecida",
-      "posicaoEtiqueta": "topo"
+      "posicaoEtiqueta": "topo",
+      "titulo": "Tchibum garantido"
     },
     {
       "foto": "/fotos/tirolesa.jpg",
       "texto": "Tirolesa no meio do verde",
-      "posicaoEtiqueta": "topo"
+      "posicaoEtiqueta": "topo",
+      "titulo": "Grito liberado!",
+      "descricao": "Desça sobre o espelho d'água do lago em uma tirolesa emocionante com vista privilegiada para a natureza nativa do camping.",
+      "observacoes": "Consulte os dias e horários de operação monitorada na recepção. Equipamentos de segurança individuais fornecidos no local.",
+      "fotos": [
+        "/fotos/galeria/tirolesa-sobre-lago.jpg",
+        "/fotos/galeria/deck-contemplacao-lago.jpg",
+        "/fotos/galeria/lago-espelho-dagua.jpg"
+      ]
     },
     {
       "foto": "/fotos/pesqueiro.jpg",
       "texto": "Pesca esportiva com aluguel de equipamento",
-      "posicaoEtiqueta": "baixo"
+      "posicaoEtiqueta": "baixo",
+      "titulo": "Hoje o peixe vem"
     },
     {
       "foto": "/fotos/quadra-tenis.jpg",
       "texto": "Tênis, beach tennis e poliesportiva",
-      "posicaoEtiqueta": "topo"
+      "posicaoEtiqueta": "topo",
+      "titulo": "Revanche na quadra"
     },
     {
       "foto": "/fotos/piscina-infantil.jpg",
       "texto": "Piscina das crianças, toboágua e playground",
-      "posicaoEtiqueta": "baixo"
+      "posicaoEtiqueta": "baixo",
+      "titulo": "Território dos pequenos"
     }
   ],
   "hospedagens": [
@@ -99,14 +111,92 @@
       "rotuloPreco": "a partir de",
       "preco": 312,
       "fotos": [
-        "/fotos/chale-madeira.jpg",
-        "/fotos/pesqueiro.jpg",
-        "/fotos/tirolesa.jpg"
+        "/fotos/hospedagens/chale-madeira/capa.jpg",
+        "/fotos/hospedagens/chale-madeira/chale-madeira-alpino-cozinha.jpg",
+        "/fotos/hospedagens/chale-madeira/chale-madeira-alpino-fachada.jpg",
+        "/fotos/hospedagens/chale-madeira/chale-madeira-alpino-quarto-mezanino.jpg",
+        "/fotos/hospedagens/chale-madeira/chale-madeira-bosque-natureza.jpg",
+        "/fotos/hospedagens/chale-madeira/chale-madeira-caminho-jardim.jpg",
+        "/fotos/hospedagens/chale-madeira/chale-madeira-churrasqueira-privativa.jpg",
+        "/fotos/hospedagens/chale-madeira/chale-madeira-fachada-bosque.jpg",
+        "/fotos/hospedagens/chale-madeira/chale-madeira-mezanino-vista-superior.jpg",
+        "/fotos/hospedagens/chale-madeira/chale-madeira-quarto-casal-escada.jpg",
+        "/fotos/hospedagens/chale-madeira/chale-madeira-varanda-bosque.jpg"
       ],
       "status": "disponivel",
       "etiqueta": "O clássico",
       "nome": "Chalé Madeira",
-      "id": "chale-madeira"
+      "id": "chale-madeira",
+      "slug": "chale-madeira",
+      "slogan": "O clássico que todo mundo ama!",
+      "descricao": "Simplicidade, conforto e contato com a natureza para curtir em família.",
+      "capacidade": "Não informado (cama de casal + 2 colchões de solteiro no mezanino)",
+      "refeicoesInclusas": true,
+      "aceitaPet": true,
+      "voltagem": "220V",
+      "estrutura": [
+        {
+          "titulo": "Quarto e cozinha integrados",
+          "itens": [
+            "Cama de casal",
+            "Televisão",
+            "Ventilador",
+            "Banheiro privativo com chuveiro elétrico"
+          ]
+        },
+        {
+          "titulo": "Cozinha",
+          "itens": [
+            "Geladeira",
+            "Fogão com forno",
+            "Pia com gabinete",
+            "Mesa com cadeiras"
+          ]
+        },
+        {
+          "titulo": "Mezanino",
+          "itens": [
+            "2 colchões de solteiro"
+          ]
+        },
+        {
+          "titulo": "Varanda",
+          "itens": [
+            "Ganchos para rede (traga a sua)"
+          ]
+        },
+        {
+          "titulo": "Área externa",
+          "itens": [
+            "Churrasqueira com pia (traga a grelha)",
+            "Mesa com bancos"
+          ]
+        }
+      ],
+      "incluso": [
+        "Café da manhã",
+        "Almoço",
+        "Acesso a piscinas, quadras, tirolesa, toboágua e área verde"
+      ],
+      "levar": [
+        "Roupa de cama",
+        "Toalhas de banho",
+        "Roupa de piscina",
+        "Utensílios de cozinha",
+        "Grelha para churrasqueira",
+        "Rede"
+      ],
+      "regras": [],
+      "horarios": "Não informado",
+      "tabelasPreco": [
+        "/fotos/tabelas-de-preco/chale-madeira/chale-madeira-01-outubrodezembromadeira.jpg",
+        "/fotos/tabelas-de-preco/chale-madeira/chale-madeira-02-outubrofdsmadeira.jpg",
+        "/fotos/tabelas-de-preco/chale-madeira/chale-madeira-03-17-3.jpg",
+        "/fotos/tabelas-de-preco/chale-madeira/chale-madeira-04-madeiranatal2.jpg",
+        "/fotos/tabelas-de-preco/chale-madeira/chale-madeira-05-madeira2027.jpg"
+      ],
+      "precoPor": "adulto",
+      "tipoReserva": "diaria"
     },
     {
       "destaque": {
@@ -151,14 +241,105 @@
       "rotuloPreco": "a partir de",
       "preco": 390,
       "fotos": [
-        "/fotos/chale-vip.jpg",
-        "/fotos/piscina-central.jpg",
-        "/fotos/piscina-feijao.jpg"
+        "/fotos/hospedagens/chale-vip/capa.jpg",
+        "/fotos/hospedagens/chale-vip/chale-vip-banheiro-completo.jpg",
+        "/fotos/hospedagens/chale-vip/chale-vip-cozinha-fogao.jpg",
+        "/fotos/hospedagens/chale-vip/chale-vip-cozinha-pia.jpg",
+        "/fotos/hospedagens/chale-vip/chale-vip-lavatorio-bancada.jpg",
+        "/fotos/hospedagens/chale-vip/chale-vip-mezanino.jpg",
+        "/fotos/hospedagens/chale-vip/chale-vip-quarto-casal-rustico.jpg",
+        "/fotos/hospedagens/chale-vip/chale-vip-quarto-casal-tijolinho.jpg",
+        "/fotos/hospedagens/chale-vip/chale-vip-quarto-casal-ventilador.jpg",
+        "/fotos/hospedagens/chale-vip/chale-vip-sala-de-estar.jpg",
+        "/fotos/hospedagens/chale-vip/chale-vip-sala-de-jantar.jpg"
       ],
       "status": "disponivel",
       "etiqueta": "Mais espaço",
       "nome": "Chalé VIP",
-      "id": "chale-vip"
+      "id": "chale-vip",
+      "slug": "chale-vip",
+      "slogan": "O chalé pra família inteira!",
+      "descricao": "Conforto, espaço e praticidade para a família aproveitar a natureza.",
+      "capacidade": "Não informado (cama de casal + 3 colchões no mezanino; louça para até 6 pessoas)",
+      "refeicoesInclusas": true,
+      "aceitaPet": true,
+      "voltagem": "220V",
+      "estrutura": [
+        {
+          "titulo": "Quarto",
+          "itens": [
+            "Cama de casal",
+            "Ar-condicionado",
+            "Ventilador de teto",
+            "Prateleiras, criado-mudo e abajur"
+          ]
+        },
+        {
+          "titulo": "Sala",
+          "itens": [
+            "Sala de TV"
+          ]
+        },
+        {
+          "titulo": "Banheiro",
+          "itens": [
+            "Banheiro privativo com chuveiro elétrico"
+          ]
+        },
+        {
+          "titulo": "Cozinha",
+          "itens": [
+            "Geladeira",
+            "Fogão com forno",
+            "Pia com gabinetes",
+            "Mesa com cadeiras",
+            "Pratos e talheres para até 6 pessoas",
+            "2 panelas"
+          ]
+        },
+        {
+          "titulo": "Mezanino",
+          "itens": [
+            "3 colchões de solteiro"
+          ]
+        },
+        {
+          "titulo": "Varanda",
+          "itens": [
+            "Ganchos para rede (traga a sua)"
+          ]
+        },
+        {
+          "titulo": "Área externa",
+          "itens": [
+            "Churrasqueira com pia (traga a grelha)",
+            "Mesa com bancos"
+          ]
+        }
+      ],
+      "incluso": [
+        "Café da manhã",
+        "Almoço",
+        "Acesso a piscinas, quadras, tirolesa, toboágua e área verde"
+      ],
+      "levar": [
+        "Roupa de cama",
+        "Toalhas de banho",
+        "Roupa de piscina",
+        "Utensílios de cozinha adicionais",
+        "Grelha para churrasqueira",
+        "Rede"
+      ],
+      "regras": [],
+      "horarios": "Não informado",
+      "tabelasPreco": [
+        "/fotos/tabelas-de-preco/chale-vip/chale-vip-01-vipsemana.jpg",
+        "/fotos/tabelas-de-preco/chale-vip/chale-vip-02-vipfds.jpg",
+        "/fotos/tabelas-de-preco/chale-vip/chale-vip-03-18-3.jpg",
+        "/fotos/tabelas-de-preco/chale-vip/chale-vip-04-vipnatal.jpg"
+      ],
+      "precoPor": "adulto",
+      "tipoReserva": "diaria"
     },
     {
       "descricaoCurta": "Conforto de quarto, cercado de natureza",
@@ -166,12 +347,78 @@
       "rotuloPreco": "a partir de",
       "preco": 343.2,
       "fotos": [
-        "/fotos/pousada.jpg"
+        "/fotos/hospedagens/pousada/capa.jpg",
+        "/fotos/hospedagens/pousada/pousada-armario-frigobar.jpg",
+        "/fotos/hospedagens/pousada/pousada-banheiro-bancada.jpg",
+        "/fotos/hospedagens/pousada/pousada-banheiro-box.jpg",
+        "/fotos/hospedagens/pousada/pousada-deck-ombrelone.jpg",
+        "/fotos/hospedagens/pousada/pousada-quarto-casal-amplo.jpg",
+        "/fotos/hospedagens/pousada/pousada-quarto-solteiro.jpg",
+        "/fotos/hospedagens/pousada/pousada-sacada-vista-arvores.jpg",
+        "/fotos/hospedagens/pousada/pousada-varanda-colonial.jpg"
       ],
       "status": "disponivel",
       "etiqueta": "Conforto",
       "nome": "Pousada",
-      "id": "pousada"
+      "id": "pousada",
+      "slug": "pousada",
+      "slogan": "Conforto em meio à natureza!",
+      "descricao": "Suíte simples e confortável, perto da natureza, ideal para descansar em família.",
+      "capacidade": "Até 3 pessoas",
+      "refeicoesInclusas": true,
+      "aceitaPet": false,
+      "voltagem": "220V",
+      "estrutura": [
+        {
+          "titulo": "Suíte",
+          "itens": [
+            "1 cama de casal",
+            "1 cama de solteiro",
+            "Televisão",
+            "Ar-condicionado",
+            "Frigobar",
+            "Maleiro",
+            "Guarda-roupas",
+            "Criado-mudo com abajur"
+          ]
+        },
+        {
+          "titulo": "Banheiro",
+          "itens": [
+            "Banheiro privativo com chuveiro elétrico"
+          ]
+        },
+        {
+          "titulo": "Enxoval",
+          "itens": [
+            "Roupa de cama inclusa",
+            "Toalhas de banho inclusas"
+          ]
+        }
+      ],
+      "incluso": [
+        "Café da manhã",
+        "Almoço",
+        "Roupa de cama e toalhas de banho",
+        "Acesso a piscinas, quadras, tirolesa, toboágua e área verde"
+      ],
+      "levar": [
+        "Toalhas para a piscina"
+      ],
+      "regras": [
+        "Não há serviço de quarto durante a estadia",
+        "TV e ar-condicionado funcionam com a TAG inserida no porta-cartão ao lado da porta"
+      ],
+      "horarios": "Não informado",
+      "tabelasPreco": [
+        "/fotos/tabelas-de-preco/pousada/pousada-01-pousadasemana2.jpg",
+        "/fotos/tabelas-de-preco/pousada/pousada-02-pousadafds2.jpg",
+        "/fotos/tabelas-de-preco/pousada/pousada-03-19-3.jpg",
+        "/fotos/tabelas-de-preco/pousada/pousada-04-pousadanatal2.jpg",
+        "/fotos/tabelas-de-preco/pousada/pousada-05-pousada2027.jpg"
+      ],
+      "precoPor": "adulto",
+      "tipoReserva": "diaria"
     },
     {
       "descricaoCurta": "Casal + solteiro, frigobar e churrasqueira externa",
@@ -179,12 +426,68 @@
       "rotuloPreco": "a partir de",
       "preco": 343.2,
       "fotos": [
-        "/fotos/suite-container.jpg"
+        "/fotos/hospedagens/suite-container/capa.jpg",
+        "/fotos/hospedagens/suite-container/suite-container-frigobar-estante.jpg",
+        "/fotos/hospedagens/suite-container/suite-container-quarto-casal.jpg",
+        "/fotos/hospedagens/suite-container/suite-container-varanda-churrasqueira.jpg",
+        "/fotos/hospedagens/suite-container/suite-container-varanda-mesa.jpg"
       ],
       "status": "disponivel",
       "etiqueta": "Diferente",
       "nome": "Suíte Container",
-      "id": "suite-container"
+      "id": "suite-container",
+      "slug": "suite-container",
+      "slogan": "Um conceito diferente de hospedagem!",
+      "descricao": "Opção prática e aconchegante para curtir a natureza com mais conforto.",
+      "capacidade": "Não informado (cama de casal + 1 colchão de solteiro)",
+      "refeicoesInclusas": true,
+      "aceitaPet": false,
+      "voltagem": "220V",
+      "estrutura": [
+        {
+          "titulo": "Suíte",
+          "itens": [
+            "Cama de casal com roupa de cama",
+            "1 colchão de solteiro",
+            "Frigobar",
+            "Ventilador",
+            "Televisão"
+          ]
+        },
+        {
+          "titulo": "Área externa",
+          "itens": [
+            "Pia",
+            "Churrasqueira",
+            "Mesa com bancos"
+          ]
+        }
+      ],
+      "incluso": [
+        "Café da manhã",
+        "Almoço",
+        "5 piscinas (uma aquecida)",
+        "Quadras esportivas",
+        "Toboágua",
+        "Tirolesa",
+        "Área verde",
+        "Pesca esportiva (consultar dias de funcionamento)"
+      ],
+      "levar": [
+        "Toalhas de banho",
+        "Cobertor"
+      ],
+      "regras": [],
+      "horarios": "Não informado",
+      "tabelasPreco": [
+        "/fotos/tabelas-de-preco/suite-container/suite-container-01-containerdiasemana.jpg",
+        "/fotos/tabelas-de-preco/suite-container/suite-container-02-conntainerfds.jpg",
+        "/fotos/tabelas-de-preco/suite-container/suite-container-03-20-1.jpg",
+        "/fotos/tabelas-de-preco/suite-container/suite-container-04-containernatal2.jpg",
+        "/fotos/tabelas-de-preco/suite-container/suite-container-05-containeranonovo2.jpg"
+      ],
+      "precoPor": "adulto",
+      "tipoReserva": "diaria"
     },
     {
       "descricaoCurta": "Casal + beliche infantil, banheiro e ar-condicionado",
@@ -192,12 +495,79 @@
       "rotuloPreco": "a partir de",
       "preco": 700,
       "fotos": [
-        "/fotos/trailer.jpg"
+        "/fotos/hospedagens/trailer/capa.jpg",
+        "/fotos/hospedagens/trailer/trailer-02.jpg",
+        "/fotos/hospedagens/trailer/trailer-ambiente-principal.jpg",
+        "/fotos/hospedagens/trailer/trailer-banheiro.jpg",
+        "/fotos/hospedagens/trailer/trailer-cozinha-compacta.jpg",
+        "/fotos/hospedagens/trailer/trailer-fachada-dia.jpg",
+        "/fotos/hospedagens/trailer/trailer-quarto-beliche.jpg",
+        "/fotos/hospedagens/trailer/trailer-quarto-cama-conversivel.jpg",
+        "/fotos/hospedagens/trailer/trailer-varanda-deck.jpg"
       ],
       "status": "disponivel",
       "etiqueta": "Sobre rodas",
       "nome": "Trailer",
-      "id": "trailer"
+      "id": "trailer",
+      "slug": "trailer",
+      "slogan": "Camping sobre rodas!",
+      "descricao": "Conforto e praticidade para a família curtir a natureza, com a casa junto.",
+      "capacidade": "Não informado (cama de casal + beliche infantil de 2 lugares)",
+      "refeicoesInclusas": false,
+      "aceitaPet": false,
+      "voltagem": "110V interno / 220V externo",
+      "estrutura": [
+        {
+          "titulo": "Interior",
+          "itens": [
+            "1 cama de casal",
+            "Beliche infantil (2 lugares)",
+            "Frigobar e micro-ondas",
+            "Pia e armários",
+            "Ar-condicionado quente e frio",
+            "TV e som"
+          ]
+        },
+        {
+          "titulo": "Banheiro",
+          "itens": [
+            "Vaso sanitário",
+            "Mini banheira",
+            "Chuveiro",
+            "Espelho"
+          ]
+        },
+        {
+          "titulo": "Área externa",
+          "itens": [
+            "Churrasqueira com pia",
+            "Mesa com bancos",
+            "Ganchos para rede (traga a sua)"
+          ]
+        }
+      ],
+      "incluso": [
+        "Acesso a piscinas, quadras, tirolesa, toboágua e área verde"
+      ],
+      "levar": [
+        "Roupa de cama",
+        "Toalhas de banho",
+        "Roupa de piscina"
+      ],
+      "regras": [
+        "Proibido fritar alimentos dentro do trailer",
+        "Proibido panelas elétricas, grills elétricos e similares",
+        "Danos por mau uso de equipamentos ou da rede elétrica são cobrados"
+      ],
+      "horarios": "Não informado",
+      "tabelasPreco": [
+        "/fotos/tabelas-de-preco/trailer/trailer-01-trailersemana.jpg",
+        "/fotos/tabelas-de-preco/trailer/trailer-02-trailerfds.jpg",
+        "/fotos/tabelas-de-preco/trailer/trailer-03-16-2.jpg",
+        "/fotos/tabelas-de-preco/trailer/trailer-04-trailernatal.jpg"
+      ],
+      "precoPor": "adulto",
+      "tipoReserva": "diaria"
     },
     {
       "descricaoCurta": "Sombra de eucalipto, banheiros e cozinha coletiva",
@@ -205,12 +575,87 @@
       "rotuloPreco": "a partir de",
       "preco": 70,
       "fotos": [
-        "/fotos/area-barracas.jpg"
+        "/fotos/hospedagens/barraca/capa.jpg",
+        "/fotos/hospedagens/barraca/barraca-acampamento-familia.jpg",
+        "/fotos/hospedagens/barraca/barraca-area-bosque.jpg",
+        "/fotos/hospedagens/barraca/barraca-area-galpao.jpg",
+        "/fotos/hospedagens/barraca/barraca-area-verde.jpg",
+        "/fotos/hospedagens/barraca/barraca-banheiros-camping.jpg",
+        "/fotos/hospedagens/barraca/barraca-bosque-eucaliptos.jpg",
+        "/fotos/hospedagens/barraca/barraca-bosque-tarde.jpg",
+        "/fotos/hospedagens/barraca/barraca-cozinha-comunitaria-01.jpg",
+        "/fotos/hospedagens/barraca/barraca-cozinha-comunitaria-02.jpg",
+        "/fotos/hospedagens/barraca/barraca-cozinha-comunitaria-03.jpg",
+        "/fotos/hospedagens/barraca/barraca-espaco-gramado.jpg",
+        "/fotos/hospedagens/barraca/barraca-estrutura-camping.jpg",
+        "/fotos/hospedagens/barraca/barraca-estrutura-energia.jpg",
+        "/fotos/hospedagens/barraca/barraca-gramado-sombra.jpg",
+        "/fotos/hospedagens/barraca/barraca-quiosque-apoio.jpg",
+        "/fotos/hospedagens/barraca/barraca-sombra-arvores.jpg",
+        "/fotos/hospedagens/barraca/barraca-vista-ampla.jpg",
+        "/fotos/hospedagens/barraca/barraca-vista-panoramica.jpg",
+        "/fotos/hospedagens/barraca/camping-2022-v02.jpg",
+        "/fotos/hospedagens/barraca/camping-2022.jpg"
       ],
       "status": "disponivel",
       "etiqueta": "Raiz",
       "nome": "Área de Barracas",
-      "id": "area-barracas"
+      "id": "area-barracas",
+      "slug": "area-barracas",
+      "tabelasPreco": [
+        "/fotos/tabelas-de-preco/barraca/barraca-01-barracaoutubrodezembro.jpg",
+        "/fotos/tabelas-de-preco/barraca/barraca-02-valoresnovossite-post-para-instagram-4_5.jpg",
+        "/fotos/tabelas-de-preco/barraca/barraca-03-barracanatal.jpg",
+        "/fotos/tabelas-de-preco/barraca/barraca-04-barraca2027.jpg"
+      ],
+      "slogan": "Para os mais aventureiros!",
+      "descricao": "Para quem ama acampar e quer ficar pertinho da natureza com a família.",
+      "capacidade": "Não informado",
+      "refeicoesInclusas": false,
+      "aceitaPet": true,
+      "voltagem": "220V",
+      "estrutura": [
+        {
+          "titulo": "Estrutura do camping",
+          "itens": [
+            "4 áreas amplas para barracas",
+            "1 área para motorhome/trailer",
+            "2 cozinhas comunitárias",
+            "Banheiro comunitário em todas as áreas",
+            "Chuveiro elétrico",
+            "Churrasqueiras (traga a grelha)",
+            "Pia em todas as áreas",
+            "Energia elétrica em todas as áreas (traga extensão)",
+            "Tachos para fogueira"
+          ]
+        }
+      ],
+      "incluso": [
+        "4 piscinas climatizadas",
+        "1 piscina aquecida",
+        "Toboágua",
+        "Área verde",
+        "Playground",
+        "Quadras esportivas",
+        "Salão de jogos",
+        "Bocha",
+        "Cama elástica",
+        "Tirolesa"
+      ],
+      "levar": [
+        "Grelha para churrasqueira",
+        "Extensão elétrica",
+        "Lenha para a fogueira"
+      ],
+      "regras": [
+        "Fogueira só nos tachos espalhados pelo camping",
+        "Proibido som alto",
+        "Silêncio das 22h às 8h",
+        "Refeições cobradas à parte"
+      ],
+      "horarios": "Entrada permitida das 8h às 22h",
+      "precoPor": "adulto",
+      "tipoReserva": "diaria"
     },
     {
       "descricaoCurta": "Barraca montada e colchonete — é só chegar",
@@ -218,12 +663,71 @@
       "rotuloPreco": "a partir de",
       "preco": 150,
       "fotos": [
-        "/fotos/foto-capa.jpg"
+        "/fotos/hospedagens/ready-camp/capa.jpg",
+        "/fotos/hospedagens/ready-camp/ready-camp-banheiros.jpg",
+        "/fotos/hospedagens/ready-camp/ready-camp-barraca-bosque.jpg",
+        "/fotos/hospedagens/ready-camp/ready-camp-barraca-familiar.jpg",
+        "/fotos/hospedagens/ready-camp/ready-camp-barraca-iglu.jpg",
+        "/fotos/hospedagens/ready-camp/ready-camp-estrutura-tablado.jpg",
+        "/fotos/hospedagens/ready-camp/ready-camp-gazebo-hexagonal.jpg",
+        "/fotos/hospedagens/ready-camp/ready-camp-varal-luzes.jpg"
       ],
       "status": "disponivel",
       "etiqueta": "Já montado",
       "nome": "Ready Camp",
-      "id": "ready-camp"
+      "id": "ready-camp",
+      "slug": "ready-camp",
+      "slogan": "Chegue e aproveite. Nós cuidamos do resto!",
+      "descricao": "Para quem quer acampar sem montar nem desmontar barraca: você chega e está tudo pronto.",
+      "capacidade": "Não informado",
+      "refeicoesInclusas": false,
+      "aceitaPet": true,
+      "voltagem": "220V",
+      "estrutura": [
+        {
+          "titulo": "Estrutura",
+          "itens": [
+            "Barraca já montada",
+            "Colchonete incluso",
+            "Banheiro comunitário",
+            "Chuveiro elétrico",
+            "Cozinha comunitária",
+            "Energia elétrica (traga extensão)",
+            "Tachos para fogueira (traga lenha)"
+          ]
+        }
+      ],
+      "incluso": [
+        "4 piscinas climatizadas",
+        "1 piscina aquecida",
+        "Toboágua",
+        "Área verde",
+        "Playground",
+        "Quadras esportivas",
+        "Salão de jogos",
+        "Bocha",
+        "Cama elástica",
+        "Tirolesa"
+      ],
+      "levar": [
+        "Extensão elétrica",
+        "Lenha para a fogueira"
+      ],
+      "regras": [
+        "Fogueira só nos tachos espalhados pelo camping",
+        "Proibido som alto",
+        "Silêncio das 22h às 8h",
+        "Refeições cobradas à parte"
+      ],
+      "horarios": "Entrada das 17h às 22h",
+      "tabelasPreco": [
+        "/fotos/tabelas-de-preco/ready-camp/ready-camp-01-readycampoutubrodezembro.jpg",
+        "/fotos/tabelas-de-preco/ready-camp/ready-camp-02-valoresnovossite-post-para-instagram-4_5-3.jpg",
+        "/fotos/tabelas-de-preco/ready-camp/ready-camp-03-readycampnatal.jpg",
+        "/fotos/tabelas-de-preco/ready-camp/ready-camp-04-readycamp2027.jpg"
+      ],
+      "precoPor": "adulto",
+      "tipoReserva": "diaria"
     },
     {
       "descricaoCurta": "Piscinas, quadras e lazer o dia inteiro",
@@ -231,12 +735,50 @@
       "rotuloPreco": "a partir de",
       "preco": 70,
       "fotos": [
-        "/fotos/piscina.jpg"
+        "/fotos/hospedagens/day-use/capa.jpg",
+        "/fotos/hospedagens/day-use/day-use-quadra-tenis.jpg"
       ],
       "status": "disponivel",
       "etiqueta": "Sem pernoite",
       "nome": "Day Use",
-      "id": "day-use"
+      "id": "day-use",
+      "slug": "day-use",
+      "slogan": "Divertimento para o dia todo!",
+      "descricao": "Área completa de lazer e recreação para a família inteira passar o dia, sem pernoite.",
+      "capacidade": "Não informado",
+      "refeicoesInclusas": false,
+      "aceitaPet": false,
+      "voltagem": "220V",
+      "estrutura": [],
+      "incluso": [
+        "3 piscinas",
+        "1 piscina infantil",
+        "1 piscina aquecida",
+        "Tobogã",
+        "Área verde",
+        "Playground",
+        "Quadras esportivas",
+        "Salão de jogos",
+        "Bocha",
+        "Cama elástica",
+        "Tirolesa",
+        "Churrasqueira (traga a grelha; por ordem de chegada)"
+      ],
+      "levar": [
+        "Grelha, se for usar a churrasqueira"
+      ],
+      "regras": [
+        "Não é permitido pet",
+        "Proibido alimentos e bebidas de fora nas áreas das piscinas e do restaurante",
+        "Proibido caixa térmica nas áreas das piscinas e do restaurante",
+        "Proibido som alto"
+      ],
+      "horarios": "Entrada e saída das 8h às 17h — recomendado chegar antes das 9h",
+      "tabelasPreco": [
+        "/fotos/tabelas-de-preco/day-use/day-use-01-dayusedezembro.jpg"
+      ],
+      "precoPor": "adulto",
+      "tipoReserva": "dia"
     },
     {
       "descricaoCurta": "Conforto, exclusividade e natureza",
@@ -244,12 +786,20 @@
       "rotuloPreco": "a partir de",
       "preco": null,
       "fotos": [
-        "/fotos/piscina-central.jpg"
+        "/fotos/hospedagens/glamping/capa.jpg"
       ],
-      "status": "em-breve",
+      "status": "em_breve",
       "etiqueta": "Em breve",
       "nome": "Glamping",
-      "id": "glamping"
+      "id": "glamping",
+      "slug": "glamping",
+      "slogan": "Uma nova experiência está chegando...",
+      "descricao": "Conforto, exclusividade e natureza.",
+      "tabelasPreco": [],
+      "precoPor": "adulto",
+      "aceitaPet": false,
+      "refeicoesInclusas": false,
+      "tipoReserva": "diaria"
     }
   ],
   "faq": [
@@ -277,5 +827,189 @@
       "pergunta": "Aniversariante tem cortesia?",
       "resposta": "Sim! O aniversariante ganha day use ou camping de cortesia, apresentando documento."
     }
-  ]
+  ],
+  "regrasGerais": {
+    "pets": "Cães de pequeno porte são aceitos na área de camping, Chalé Madeira, Chalé VIP e Ready Camp, com taxa de R$ 50 por animal/noite. Sempre na coleira, fora das piscinas e do restaurante. Não são aceitos no Day Use, Pousada, Trailer e Suíte Container.",
+    "pagamento": "Chalés: 50% via transferência para garantir a reserva e o restante no check-in. Barracas e Day Use: pagamento na chegada. Dinheiro, Mastercard ou Visa; acima de R$ 300 em até 3x no cartão. Não aceita cheque.",
+    "cancelamento": "Mais de 15 dias antes: 90% de reembolso. De 2 a 15 dias: 50%. Menos de 2 dias: sem reembolso. Remarcação com 7 dias de antecedência, uma única vez, taxa de 20%, conforme disponibilidade. Clima não dá direito a reembolso ou remarcação.",
+    "silencio": "Silêncio das 22h às 8h. Proibido som alto, som automotivo e caixas portáteis.",
+    "wifi": "Wi-Fi gratuito na sorveteria e no restaurante.",
+    "aniversariante": "Aniversariante ganha Day Use ou camping de cortesia apresentando documento.",
+    "opcionaisPagos": [
+      {
+        "nome": "Aluguel de barraca",
+        "telefone": "(11) 95056-5559"
+      },
+      {
+        "nome": "Pesqueiro",
+        "telefone": "(11) 94220-8965"
+      },
+      {
+        "nome": "Paintball",
+        "telefone": "(11) 99826-8695"
+      }
+    ]
+  },
+  "bannerIncluso": {
+    "foto": "/fotos/hero-aerea.jpg",
+    "frase": "a sua diária inclui ✦",
+    "tituloLinha1": "Tudo isso já vem",
+    "tituloLinha2": "na sua hospedagem",
+    "descricao": "Piscinas, toboágua, tirolesa, quadras, salão de jogos e playground — sem pagar nada a mais.",
+    "botaoTexto": "Ver hospedagens",
+    "botaoLink": "#hospedagens",
+    "nota": "Pesqueiro, paintball e aluguel de barraca são cobrados à parte."
+  },
+  "taxaPet": 50,
+  "feriados": [
+    {
+      "data": "2026-11-02",
+      "nome": "Finados"
+    },
+    {
+      "data": "2026-11-15",
+      "nome": "Proclamação da República"
+    },
+    {
+      "data": "2026-11-20",
+      "nome": "Consciência Negra"
+    },
+    {
+      "data": "2026-12-25",
+      "nome": "Natal"
+    },
+    {
+      "data": "2027-01-01",
+      "nome": "Ano-novo"
+    },
+    {
+      "data": "2027-02-08",
+      "nome": "Carnaval"
+    },
+    {
+      "data": "2027-02-09",
+      "nome": "Carnaval"
+    },
+    {
+      "data": "2027-03-26",
+      "nome": "Sexta-feira Santa"
+    },
+    {
+      "data": "2027-04-21",
+      "nome": "Tiradentes"
+    },
+    {
+      "data": "2027-05-01",
+      "nome": "Dia do Trabalho"
+    },
+    {
+      "data": "2027-05-27",
+      "nome": "Corpus Christi"
+    },
+    {
+      "data": "2027-07-09",
+      "nome": "Revolução Constitucionalista"
+    },
+    {
+      "data": "2027-09-07",
+      "nome": "Independência"
+    },
+    {
+      "data": "2027-10-12",
+      "nome": "N. Sra. Aparecida"
+    },
+    {
+      "data": "2027-11-02",
+      "nome": "Finados"
+    },
+    {
+      "data": "2027-11-15",
+      "nome": "Proclamação da República"
+    },
+    {
+      "data": "2027-11-20",
+      "nome": "Consciência Negra"
+    },
+    {
+      "data": "2027-12-25",
+      "nome": "Natal"
+    }
+  ],
+  "reserva": {
+    "taxaPet": 50,
+    "feriados": [
+      {
+        "data": "2026-11-02",
+        "nome": "Finados"
+      },
+      {
+        "data": "2026-11-15",
+        "nome": "Proclamação da República"
+      },
+      {
+        "data": "2026-11-20",
+        "nome": "Consciência Negra"
+      },
+      {
+        "data": "2026-12-25",
+        "nome": "Natal"
+      },
+      {
+        "data": "2027-01-01",
+        "nome": "Ano-novo"
+      },
+      {
+        "data": "2027-02-08",
+        "nome": "Carnaval"
+      },
+      {
+        "data": "2027-02-09",
+        "nome": "Carnaval"
+      },
+      {
+        "data": "2027-03-26",
+        "nome": "Sexta-feira Santa"
+      },
+      {
+        "data": "2027-04-21",
+        "nome": "Tiradentes"
+      },
+      {
+        "data": "2027-05-01",
+        "nome": "Dia do Trabalho"
+      },
+      {
+        "data": "2027-05-27",
+        "nome": "Corpus Christi"
+      },
+      {
+        "data": "2027-07-09",
+        "nome": "Revolução Constitucionalista"
+      },
+      {
+        "data": "2027-09-07",
+        "nome": "Independência"
+      },
+      {
+        "data": "2027-10-12",
+        "nome": "N. Sra. Aparecida"
+      },
+      {
+        "data": "2027-11-02",
+        "nome": "Finados"
+      },
+      {
+        "data": "2027-11-15",
+        "nome": "Proclamação da República"
+      },
+      {
+        "data": "2027-11-20",
+        "nome": "Consciência Negra"
+      },
+      {
+        "data": "2027-12-25",
+        "nome": "Natal"
+      }
+    ]
+  }
 }
