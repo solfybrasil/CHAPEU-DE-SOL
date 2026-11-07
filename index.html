@@ -458,6 +458,8 @@
   }
   .hosp-card{cursor:pointer;transition:transform .2s ease,box-shadow .2s ease}
   .hosp-card:hover{transform:translateY(-3px)}
+  .hosp-card-link{display:flex;flex-direction:column;flex:1;color:inherit;text-decoration:none}
+  .hosp-card-link:hover{text-decoration:none}
 
 
 /* No horizontal overflow */
@@ -574,8 +576,10 @@ html, body {
     /* barra inferior estilo app */
     .tabbar{position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:80;display:grid;grid-template-columns:repeat(5,1fr);align-items:end;
       background:rgba(11,47,32,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(239,232,208,.1);border-radius:22px;padding:8px 4px 7px;
-      box-shadow:0 14px 40px -12px rgba(0,0,0,.6);transform:none;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
-    .tabbar.show{transform:none}
+      box-shadow:0 14px 40px -12px rgba(0,0,0,.6);transform:translateY(160%);opacity:0;pointer-events:none;transition:transform .45s cubic-bezier(.2,.8,.2,1), opacity .3s ease}
+    .tabbar.show{transform:none;opacity:1;pointer-events:auto}
+    body.has-modal-open .tabbar,
+    .tabbar.hide-modal{transform:translateY(160%) !important;opacity:0 !important;pointer-events:none !important}
     .tabbar a{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:.62rem;font-weight:700;color:rgba(239,232,208,.62);min-height:44px;justify-content:flex-end;-webkit-tap-highlight-color:transparent}
     .tabbar a svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
     .tabbar a.on{color:#A8D8A2}
@@ -913,12 +917,16 @@ function openLazerDrawer(idx) {
   document.getElementById("lazerDrawerOverlay").classList.add("active");
   document.getElementById("lazerDrawer").classList.add("active");
   document.body.style.overflow = "hidden";
+  document.body.classList.add("has-modal-open");
+  tabbar?.classList.add("hide-modal");
 }
 
 function closeLazerDrawer() {
   document.getElementById("lazerDrawerOverlay").classList.remove("active");
   document.getElementById("lazerDrawer").classList.remove("active");
   document.body.style.overflow = "";
+  document.body.classList.remove("has-modal-open");
+  tabbar?.classList.remove("hide-modal");
 }
 
 /* RENDER LAZER */
@@ -949,6 +957,8 @@ function toggleDrawer(open) {
   hxDrawerBackdrop.classList.toggle("open", isOpen);
   if (hxMenuBtn) hxMenuBtn.classList.toggle("open", isOpen);
   document.body.style.overflow = isOpen ? "hidden" : "";
+  document.body.classList.toggle("has-modal-open", isOpen);
+  tabbar?.classList.toggle("hide-modal", isOpen);
 }
 
 if (hxMenuBtn) hxMenuBtn.onclick = () => toggleDrawer();
@@ -984,15 +994,29 @@ const card = s => {
   const fotoCapa = s.fotos && s.fotos.length ? s.fotos[0] : (s.img || "");
   const slug = s.slug || s.id;
   const desc = s.descricaoCurta || s.m || "";
-  return `<article class="card hosp-card" data-slug="${slug}" title="Ver detalhes de ${s.nome || s.n}">
-    ${ph(fotoCapa, s.nome || s.n, "", chipText ? `<span class="chip t">${chipText}</span>` : "")}
-    <h3>${s.nome || s.n}</h3><p class="meta">${desc}</p>
+  const hospHref = (window.location.protocol === 'file:') ? `hospedagem.html?slug=${slug}` : `/hospedagens/${slug}`;
+  return `<article class="card hosp-card" data-slug="${slug}" role="link" tabindex="0" title="Ver detalhes de ${s.nome || s.n}">
+    <a href="${hospHref}" class="hosp-card-link" aria-label="Ver detalhes de ${s.nome || s.n}">
+      ${ph(fotoCapa, s.nome || s.n, "", chipText ? `<span class="chip t">${chipText}</span>` : "")}
+      <h3>${s.nome || s.n}</h3><p class="meta">${desc}</p>
+    </a>
     <div class="row">
       <div class="price">${priceHtml}</div>
-      <button class="btn btn-dark btn-sm pick" data-id="${s.id}">${btnText}</button>
+      <button type="button" class="btn btn-dark btn-sm pick" data-id="${s.id}">${btnText}</button>
     </div>
   </article>`;
 };
+
+/* Clique no card de hospedagem abre a página do chalé */
+document.addEventListener("click", e => {
+  if (e.target.closest(".pick")) return;
+  const hospCard = e.target.closest(".hosp-card");
+  if (hospCard && hospCard.dataset.slug) {
+    const slug = hospCard.dataset.slug;
+    const url = (window.location.protocol === 'file:') ? `hospedagem.html?slug=${slug}` : `/hospedagens/${slug}`;
+    window.location.href = url;
+  }
+});
 
 /* RENDER HOSPEDAGENS */
 function renderHospedagens(hospedagens) {
@@ -1246,6 +1270,8 @@ function openP(pane, btn) {
   if (pane === "gue") renderGue();
   if (pane === "acc") renderAcc();
   if (innerWidth <= 760) document.body.style.overflow = "hidden";
+  document.body.classList.add("has-modal-open");
+  tabbar?.classList.add("hide-modal");
 }
 
 function closeP() {
@@ -1253,6 +1279,8 @@ function closeP() {
   pop.classList.remove("open");
   back.classList.remove("open");
   document.body.style.overflow = "";
+  document.body.classList.remove("has-modal-open");
+  tabbar?.classList.remove("hide-modal");
   document.querySelectorAll(".bf").forEach(b => b.classList.remove("on"));
   if (B.ci && !B.co && !isDay()) B.co = addD(B.ci, 1);
   updateBar();
@@ -1568,10 +1596,12 @@ setupCarouselDots();
 /* ===== mobile: barra inferior aparece depois do hero e marca a seção atual ===== */
 const tabbar = document.querySelector(".tabbar");
 if (tabbar) {
-  const topoEl = document.getElementById("topo");
-  if (topoEl) {
-    new IntersectionObserver(([e]) => tabbar.classList.toggle("show", !e.isIntersecting), { rootMargin: "-40% 0px 0px 0px" }).observe(topoEl);
-  }
+  const updateTabbarVisibility = () => {
+    const scrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+    tabbar.classList.toggle("show", scrollY > 220);
+  };
+  window.addEventListener("scroll", updateTabbarVisibility, { passive: true });
+  updateTabbarVisibility();
   const secs = ["topo", "reservar", "hospedagens", "lazer"].map(id => document.getElementById(id)).filter(Boolean);
   const mark = () => {
     let cur = "topo";
