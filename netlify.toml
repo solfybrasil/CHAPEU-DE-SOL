@@ -1,0 +1,29 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/hospedagens/:slug"
+  to = "/hospedagem.html"
+  status = 200
+
+[[redirects]]
+  from = "/hospedagens/*"
+  to = "/hospedagem.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/fotos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

@@ -1,1 +1,2 @@
 /hospedagens/:slug   /hospedagem.html   200
+/hospedagens/*       /hospedagem.html   200
