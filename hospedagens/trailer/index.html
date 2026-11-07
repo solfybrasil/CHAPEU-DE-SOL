@@ -1094,6 +1094,7 @@ const nightsOf = (a, b) => Math.round((day0(b) - day0(a)) / 864e5);
 const fmtS = d => `${SEM[d.getDay()]}, ${d.getDate()} ${MES[d.getMonth()].slice(0,3)}`;
 const fmtBR = d => `${pad(d.getDate())}/${pad(d.getMonth()+1)}/${d.getFullYear()}`;
 const TODAY = day0(new Date());
+const brl = v => "R$ " + (Number(v) || 0).toLocaleString("pt-BR", { minimumFractionDigits: (Number(v) % 1 ? 2 : 0), maximumFractionDigits: 2 });
 
 const B = {
   acc: "",
@@ -1134,10 +1135,12 @@ function setupHospBooking(hosp, data) {
     if (pane === "cal") { if (B.ci) B.view = new Date(B.ci.getFullYear(), B.ci.getMonth(), 1); renderCal(); }
     if (pane === "gue") renderGue();
     if (innerWidth <= 760) document.body.style.overflow = "hidden";
+    document.body.classList.add("has-modal-open");
   }
 
   function closeP() {
     openPane = null; pop.classList.remove("open"); back.classList.remove("open"); document.body.style.overflow = "";
+    document.body.classList.remove("has-modal-open");
     document.querySelectorAll(".bf").forEach(b => b.classList.remove("on"));
     if (B.ci && !B.co && !isDay()) B.co = addD(B.ci, 1);
     updateBar();
@@ -1356,6 +1359,7 @@ async function init() {
     }
 
     renderPage(hosp, siteDados);
+    setupHospBooking(hosp, siteDados);
   } catch (err) {
     console.error('Erro ao carregar dados:', err);
     renderNotFound();
