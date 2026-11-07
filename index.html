@@ -193,7 +193,9 @@
     .bp-foot{position:sticky;z-index:5;box-shadow:0 -10px 20px -12px rgba(0,0,0,.25);bottom:calc(-16px - env(safe-area-inset-bottom));background:var(--cream-2);margin:14px -18px 0;padding:12px 18px calc(4px + env(safe-area-inset-bottom))}
     .bp-act{width:100%}
     .bp-act .btn{flex:1;justify-content:center;min-height:48px}
-    .acc-list{max-height:none}
+    .bpop[data-show="acc"]{display:flex!important;flex-direction:column!important;max-height:85svh!important;overflow:hidden!important;padding-bottom:calc(12px + env(safe-area-inset-bottom))!important}
+    .bpop[data-show="acc"] .bp-pane[data-pane="acc"]{display:flex!important;flex-direction:column!important;flex:1!important;min-height:0!important;overflow:hidden!important}
+    .bpop[data-show="acc"] .acc-list{flex:1!important;max-height:none!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch!important;touch-action:pan-y!important;padding:4px 4px calc(24px + env(safe-area-inset-bottom)) 4px!important}
     .bsum{font-size:.66rem;gap:.15rem .5rem;margin-top:-2px}
     .bsum>span+span:not(.est)::before{margin-right:.5rem}
     .bsum .est{margin-left:0}

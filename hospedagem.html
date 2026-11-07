@@ -171,21 +171,27 @@
   .foot-text{font-size:.78rem;opacity:.7}
 
   /* LIGHTBOX */
-  .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);backdrop-filter:blur(8px);z-index:9999;display:none;flex-direction:column;align-items:center;justify-content:center}
+  .lightbox{position:fixed;inset:0;background:rgba(6,24,16,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);z-index:99999;display:none;align-items:center;justify-content:center;touch-action:none}
   .lightbox.active{display:flex}
-  .lb-close{position:absolute;top:20px;right:24px;background:none;border:0;color:#fff;font-size:2.4rem;cursor:pointer;line-height:1;opacity:.8;padding:8px}
-  .lb-close:hover{opacity:1;color:var(--sun)}
-  .lb-content{max-width:90vw;max-height:82vh;display:flex;align-items:center;justify-content:center;position:relative}
-  .lb-content img{max-width:100%;max-height:82vh;object-fit:contain;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
-  .lb-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.12);border:0;color:#fff;font-size:1.8rem;width:52px;height:52px;border-radius:50%;cursor:pointer;display:grid;place-items:center;transition:background .2s}
-  .lb-arrow:hover{background:var(--sun);color:var(--ink)}
-  .lb-arrow.prev{left:24px}
-  .lb-arrow.next{right:24px}
-  .lb-caption{margin-top:14px;color:var(--cream);font-size:.85rem;font-weight:600;text-align:center;max-width:70vw}
-  .lb-counter{position:absolute;top:24px;left:24px;color:rgba(255,255,255,.7);font-size:.8rem;font-weight:700}
+  .lb-top{position:absolute;top:max(16px,env(safe-area-inset-top));left:20px;right:20px;display:flex;justify-content:space-between;align-items:center;z-index:10}
+  .lb-counter{color:var(--cream);font-size:.88rem;font-weight:700;background:rgba(11,47,32,.75);padding:.35rem .75rem;border-radius:999px;border:1px solid rgba(239,232,208,.2)}
+  .lb-close{background:rgba(11,47,32,.75);border:1px solid rgba(239,232,208,.2);color:var(--cream);font-size:1.8rem;line-height:1;width:44px;height:44px;border-radius:50%;cursor:pointer;display:grid;place-items:center;transition:background .2s,transform .2s}
+  .lb-close:hover,.lb-close:active{background:var(--mint);color:#fff;transform:scale(1.05)}
+  .lb-content{width:100%;height:100%;max-width:96vw;max-height:86vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 10px 20px;position:relative;user-select:none;-webkit-user-select:none}
+  .lb-content img{max-width:100%;max-height:calc(86vh - 40px);object-fit:contain;border-radius:12px;box-shadow:0 16px 50px rgba(0,0,0,.6);transition:transform .25s ease}
+  .lb-caption{margin-top:10px;color:var(--cream);font-size:.82rem;font-weight:600;text-align:center;max-width:80vw}
+  .lb-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(11,47,32,.8);border:1px solid rgba(239,232,208,.25);color:var(--cream);font-size:1.4rem;width:48px;height:48px;border-radius:50%;cursor:pointer;display:grid;place-items:center;z-index:10;transition:background .2s,transform .2s}
+  .lb-arrow.lb-prev, .lb-arrow.prev{left:14px!important;right:auto!important}
+  .lb-arrow.lb-next, .lb-arrow.next{right:14px!important;left:auto!important}
+  .lb-arrow:hover,.lb-arrow:active{background:var(--mint);color:#fff}
+  @media(max-width:640px){
+    .lb-arrow{width:42px;height:42px;font-size:1.2rem}
+    .lb-arrow.lb-prev, .lb-arrow.prev{left:8px!important;right:auto!important}
+    .lb-arrow.lb-next, .lb-arrow.next{right:8px!important;left:auto!important}
+  }
 
   /* MOBILE FIXED BOTTOM BAR */
-  .mobile-bottom-bar{position:fixed;bottom:0;left:0;right:0;background:var(--panel);border-top:1px solid rgba(239,232,208,.15);padding:10px 16px;display:none;align-items:center;justify-content:space-between;z-index:998;box-shadow:0 -4px 20px rgba(0,0,0,.3)}
+  .mobile-bottom-bar{display:none !important}
   .mob-price{font-size:.78rem}
   .mob-price b{font-family:"Bebas Neue";font-size:1.6rem;color:var(--sun);margin-left:4px}
   .mobile-bottom-bar .btn{padding:.65rem 1.4rem;font-size:.82rem}
@@ -211,7 +217,7 @@
     .book{grid-template-columns:1fr}
     .book h4{grid-column:span 1}
     .book .btn{grid-column:span 1}
-    .mobile-bottom-bar{display:flex}
+    .mobile-bottom-bar{display:none !important}
     .page{padding-bottom:80px}
     .lb-arrow.prev{left:8px;width:40px;height:40px;font-size:1.3rem}
     .lb-arrow.next{right:8px;width:40px;height:40px;font-size:1.3rem}
@@ -355,7 +361,10 @@ html, body {
 }
 
 /* ============ RESERVA — telas próprias ============ */
-  .book{margin-top:10px;background:var(--cream);color:var(--ink);border-radius:var(--r);padding:14px 14px 14px 26px;display:grid;grid-template-columns:auto 1fr 1fr 1fr 1fr auto;gap:12px;align-items:center;position:relative}
+  .book{margin-top:10px;background:var(--cream);color:var(--ink);border-radius:var(--r);padding:14px 14px 14px 26px;display:grid;grid-template-columns:auto 1fr 1fr 1fr 1fr auto;gap:12px;align-items:center;position:relative;max-width:100%;box-sizing:border-box}
+@media(max-width:760px){
+  .book{grid-template-columns:1fr!important;padding:14px!important;gap:8px!important;box-sizing:border-box!important}
+}
   .book h4{font-family:"Bebas Neue";font-size:1.35rem;line-height:.9;font-weight:400;letter-spacing:.02em;margin-right:1rem;display:flex;align-items:center;gap:.7rem}
   .book h4 img{width:44px;height:auto}
   .bf{background:var(--cream-2);border:1px solid rgba(16,40,28,.12);border-radius:10px;padding:.45rem .75rem;display:flex;align-items:center;justify-content:space-between;gap:.5rem;position:relative;font:inherit;text-align:left;cursor:pointer;color:var(--ink);width:100%;transition:border-color .2s,box-shadow .2s,background .2s}
@@ -474,7 +483,14 @@ html, body {
     .bp-foot{position:sticky;z-index:5;box-shadow:0 -10px 20px -12px rgba(0,0,0,.25);bottom:calc(-16px - env(safe-area-inset-bottom));background:var(--cream-2);margin:14px -18px 0;padding:12px 18px calc(4px + env(safe-area-inset-bottom))}
     .bp-act{width:100%}
     .bp-act .btn{flex:1;justify-content:center;min-height:48px}
-    .acc-list{max-height:none}
+    .book{grid-template-columns:1fr!important;padding:14px!important;gap:8px!important;border-radius:18px!important;box-sizing:border-box!important;max-width:100%!important}
+    .book h4{grid-column:1/-1!important;margin:0 0 6px 0!important;font-size:1.3rem!important;display:flex!important;align-items:center!important;gap:.6rem!important}
+    .book h4 img{width:36px!important;height:auto!important}
+    .book .btn{grid-column:1/-1!important;min-height:48px!important;justify-content:center!important;width:100%!important;padding:.75rem 1.2rem!important}
+    .bf{min-height:48px!important;width:100%!important;box-sizing:border-box!important}
+    .bpop[data-show="acc"]{display:flex!important;flex-direction:column!important;max-height:85svh!important;overflow:hidden!important}
+    .bpop[data-show="acc"] .bp-pane[data-pane="acc"]{display:flex!important;flex-direction:column!important;flex:1!important;min-height:0!important;overflow:hidden!important}
+    .bpop[data-show="acc"] .acc-list{flex:1!important;max-height:none!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch!important;touch-action:pan-y!important;padding-bottom:24px!important}
     .bsum{font-size:.66rem;gap:.15rem .5rem;margin-top:-2px}
     .bsum>span+span:not(.est)::before{margin-right:.5rem}
     .bsum .est{margin-left:0}
@@ -493,12 +509,17 @@ html, body {
   </div>
 </div>
 
-<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
-  <div class="lb-close" id="lbClose" onclick="closeLightbox(event)">&times;</div>
-  <div class="lb-arrow lb-prev" id="lbPrev" onclick="changeLightbox(-1, event)">&#10094;</div>
-  <div class="lb-arrow lb-next" id="lbNext" onclick="changeLightbox(1, event)">&#10095;</div>
-  <img id="lbImg" src="" alt="Imagem ampliada">
-  <div class="lb-counter" id="lbCounter">1 / 1</div>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de fotos">
+  <div class="lb-top">
+    <div class="lb-counter" id="lbCounter">1 / 1</div>
+    <button type="button" class="lb-close" id="lbClose" onclick="closeLightbox()" aria-label="Fechar">&times;</button>
+  </div>
+  <button type="button" class="lb-arrow lb-prev prev" id="lbPrev" onclick="prevLb(event)" aria-label="Foto anterior">&#10094;</button>
+  <div class="lb-content" id="lbContent">
+    <img id="lbImg" src="" alt="Foto ampliada">
+    <div class="lb-caption" id="lbCaption"></div>
+  </div>
+  <button type="button" class="lb-arrow lb-next next" id="lbNext" onclick="nextLb(event)" aria-label="Próxima foto">&#10095;</button>
 </div>
 
 <script>
@@ -526,67 +547,86 @@ function normalizeSlug(slug) {
 }
 
 function openLightbox(photos, startIndex = 0) {
+  if (!photos || !photos.length) return;
   currentPhotos = photos;
-  currentLbIndex = startIndex;
+  currentLbIndex = Math.max(0, Math.min(startIndex, photos.length - 1));
   updateLightbox();
-  document.getElementById('lightbox').classList.add('active');
+  const lb = document.getElementById('lightbox');
+  if (lb) lb.classList.add('active');
   document.body.style.overflow = 'hidden';
 }
 
-function closeLightbox() {
-  document.getElementById('lightbox').classList.remove('active');
+function closeLightbox(e) {
+  if (e) e.stopPropagation();
+  const lb = document.getElementById('lightbox');
+  if (lb) lb.classList.remove('active');
   document.body.style.overflow = '';
 }
 
 function updateLightbox() {
-  if (!currentPhotos.length) return;
+  if (!currentPhotos || !currentPhotos.length) return;
   const item = currentPhotos[currentLbIndex];
-  const src = typeof item === 'string' ? item : item.foto || item.src;
-  const caption = typeof item === 'string' ? '' : item.legenda || item.descricao || '';
+  const src = typeof item === 'string' ? item : (item.foto || item.src || '');
+  const caption = typeof item === 'string' ? '' : (item.legenda || item.descricao || '');
   
   const img = document.getElementById('lbImg');
-  img.src = src;
-  img.alt = caption || 'Foto ampliada';
+  if (img) {
+    img.src = src;
+    img.alt = caption || 'Foto ampliada';
+  }
   
-  document.getElementById('lbCounter').textContent = `${currentLbIndex + 1} / ${currentPhotos.length}`;
-  document.getElementById('lbCaption').textContent = caption;
+  const counter = document.getElementById('lbCounter');
+  if (counter) {
+    counter.textContent = `${currentLbIndex + 1} / ${currentPhotos.length}`;
+  }
+  const cap = document.getElementById('lbCaption');
+  if (cap) {
+    cap.textContent = caption;
+    cap.style.display = caption ? 'block' : 'none';
+  }
 }
 
-function nextLb() {
-  if (!currentPhotos.length) return;
+function nextLb(e) {
+  if (e) e.stopPropagation();
+  if (!currentPhotos || !currentPhotos.length) return;
   currentLbIndex = (currentLbIndex + 1) % currentPhotos.length;
   updateLightbox();
 }
 
-function prevLb() {
-  if (!currentPhotos.length) return;
+function prevLb(e) {
+  if (e) e.stopPropagation();
+  if (!currentPhotos || !currentPhotos.length) return;
   currentLbIndex = (currentLbIndex - 1 + currentPhotos.length) % currentPhotos.length;
   updateLightbox();
 }
 
 // Lightbox keyboard & swipe events
-document.getElementById('lbClose')?.addEventListener('click', closeLightbox);
-document.getElementById('lbNext')?.addEventListener('click', nextLb);
-document.getElementById('lbPrev')?.addEventListener('click', prevLb);
-
 window.addEventListener('keydown', (e) => {
   const lb = document.getElementById('lightbox');
-  if (!lb.classList.contains('active')) return;
+  if (!lb || !lb.classList.contains('active')) return;
   if (e.key === 'Escape') closeLightbox();
   if (e.key === 'ArrowRight') nextLb();
   if (e.key === 'ArrowLeft') prevLb();
 });
 
-// Touch swipe support
-let touchStartX = 0;
-let touchEndX = 0;
-const lbElem = document.getElementById('lightbox');
-lbElem.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; }, {passive: true});
-lbElem.addEventListener('touchend', (e) => {
-  touchEndX = e.changedTouches[0].screenX;
-  if (touchStartX - touchEndX > 50) nextLb();
-  if (touchEndX - touchStartX > 50) prevLb();
-}, {passive: true});
+// Touch swipe gestures on mobile
+let touchStartX = 0, touchStartY = 0;
+const lbContainer = document.getElementById('lightbox');
+if (lbContainer) {
+  lbContainer.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+    touchStartY = e.changedTouches[0].screenY;
+  }, { passive: true });
+
+  lbContainer.addEventListener('touchend', e => {
+    const diffX = touchStartX - e.changedTouches[0].screenX;
+    const diffY = touchStartY - e.changedTouches[0].screenY;
+    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 40) {
+      if (diffX > 0) nextLb();
+      else prevLb();
+    }
+  }, { passive: true });
+}
 
 // WhatsApp helper
 function buildWhatsAppUrl(hospNome, checkin = '', checkout = '', hospedes = '') {
@@ -657,7 +697,7 @@ function renderPage(h, dados) {
   const maxThumbs = 5;
   const thumbsList = fotos.slice(0, maxThumbs);
   const thumbsHtml = thumbsList.map((f, i) => `
-    <div class="hosp-thumb ph ${i === 0 ? 'on' : ''}" onclick="selectThumb(${i})" data-index="${i}">
+    <div class="hosp-thumb ph ${i === 0 ? 'on' : ''}" onclick="onThumbClick(${i})" data-index="${i}">
       <img src="${f}" alt="${h.nome} foto ${i+1}" loading="lazy">
     </div>
   `).join('');
@@ -937,7 +977,7 @@ function renderPage(h, dados) {
       </div>
 
       <div class="hosp-right">
-        <div class="main-photo-wrap" onclick="openLightbox(currentHosp.fotos, 0)">
+        <div class="main-photo-wrap" onclick="openLightbox(currentHosp.fotos, currentLbIndex || 0)">
           <div class="ph">
             <img id="mainHeroImg" src="${capaFoto}" alt="${h.nome} foto principal">
           </div>
@@ -1017,14 +1057,21 @@ function renderPage(h, dados) {
   `;
 }
 
+function onThumbClick(idx) {
+  selectThumb(idx);
+  if (window.innerWidth <= 760) {
+    openLightbox(currentHosp.fotos, idx);
+  }
+}
+
 function selectThumb(idx) {
-  if (!currentHosp || !currentHosp.fotos[idx]) return;
+  if (!currentHosp || !currentHosp.fotos || !currentHosp.fotos[idx]) return;
+  currentLbIndex = idx;
   const mainImg = document.getElementById('mainHeroImg');
   if (mainImg) mainImg.src = currentHosp.fotos[idx];
   
   document.querySelectorAll('.hosp-thumb').forEach((el, i) => {
-    if (i === idx) el.classList.add('on');
-    else el.classList.remove('on');
+    el.classList.toggle('on', i === idx);
   });
 }
 
